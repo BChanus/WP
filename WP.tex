@@ -176,7 +176,7 @@ This method can be pretty efficient because we can also collect data from past r
 We extend here our scope of possibility to all the types of data because we need to solve the rigidity problem of the previous method. First we'll try to find a way of selecting the most influential hosts in the application i.e. the hosts for whom a variation of behavior has an important impact on the whole application. We'll then find a way to organize hosts into groups with common behaviors so that we can analyze the mean of the total group and then we'll be able to add and remove hosts from these group without losing the learning, it's also allowing more data to be used during the training of the algorithm.
 \subsection{Feature selection}
 \subsubsection{Signal Processing}
-The signal we get from the historical data is full of small variation that may be due to measure errors or changes that are periodical parasite which are irrelevant to treat. Therefore we will try to eliminate as much noise as possible to get a better accuracy in the computation of the influence. Indeed we are going to use a correlation between signals to guess the influence of a variable over another so we have to take into account only the significant event.
+The signal we get from the historical data is full of small variation that may be due to measure errors or changes that are periodical parasite which are irrelevant to treat. Therefore we will try to eliminate as much noise as possible to get a better accuracy in the computation of the influence. Indeed we are going to use a correlation between signals to guess the influence of a variable over another so we have to take into account only the significant event.Furthermore we have to find a proper way of evaluating the influence a node has over another.
 \\
 In order to reduce the noise in our signal we'll use some wavelets theory. The choosen method is described in described in detail in (http://cdn.intechopen.com/pdfs/34959/intech-utilising(underscore)the(underscore)wavelet(underscore)transform(underscore)in(underscore)condition(underscore)based(underscore)maintenance(underscore)a(underscore)review(underscore)with(underscore)applications.pdf)
 Basically we transform the data in wavelet domain with DTCWT - which can be done with the dtcwt library in python for instance - we then do the processing, it consists in shrinking the noisy coefficient and finally we recover the de-noised signal by doing the inverse transformation.
@@ -209,7 +209,7 @@ Some crawlers are put on a random starting point into the graph and they will fo
 
 \begin{multicols}{2}
 
-So we have to find a proper way of evaluating the influence a node has over another.\\
+
 -graph
 -augmenter la valeur de l'arrete quand il y a correlation
 -page rank
