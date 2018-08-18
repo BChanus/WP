@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6745 64-bit) (preloaded format=pdflatex 2018.8.16)  16 AUG 2018 18:12
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.8.8)  17 AUG 2018 20:27
+>>>>>>> 3ed55f9ce5f51c4a23265cc501a1cb2d16d1bdf0
 entering extended mode
 **C:/Users/michael.aubertin/Documents/MyGitRepos/WP/WP.tex
 (C:/Users/michael.aubertin/Documents/MyGitRepos/WP/WP.tex
@@ -410,34 +414,72 @@ Overfull \hbox (22.20071pt too wide) in paragraph at lines 160--161
  []
 
 [5 <./images/population.png>]
+<<<<<<< HEAD
 <./images/graphe.png, id=45, 945.5325pt x 776.9025pt>
+=======
+Underfull \hbox (badness 8019) in paragraph at lines 179--184
+\T1/cmr/m/n/10 In or-der to re-duce the noise in our sig-nal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--184
+\T1/cmr/m/n/10 method is de-scribed in de-scribed in de-tail
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--184
+\T1/cmr/m/n/10 in (http://cdn.intechopen.com/pdfs/34959/intech-
+ []
+
+
+Overfull \hbox (741.60707pt too wide) in paragraph at lines 179--184
+\T1/cmr/m/n/10 utilising(underscore)the(underscore)wavelet(underscore)transform
+(underscore)in(underscore)condition(underscore)based(underscore)maintenance(und
+erscore)a(underscore)review(underscore)with(underscore)applications.pdf)
+ []
+
+
+Overfull \hbox (144.07243pt too wide) in paragraph at lines 185--194
+\T1/cmr/m/n/10 (-----!-----) Granger causal-ity https://www.ncbi.nlm.nih.gov/pm
+c/articles/PMC5082311/
+ []
+
+<./images/graphe.png, id=46, 945.5325pt x 776.9025pt>
+>>>>>>> 3ed55f9ce5f51c4a23265cc501a1cb2d16d1bdf0
 File: ./images/graphe.png Graphic file (type png)
 <use ./images/graphe.png>
+<<<<<<< HEAD
 Package pdftex.def Info: ./images/graphe.png  used on input line 189.
+=======
+Package pdftex.def Info: ./images/graphe.png used on input line 203.
+>>>>>>> 3ed55f9ce5f51c4a23265cc501a1cb2d16d1bdf0
 (pdftex.def)             Requested size: 425.4857pt x 349.60289pt.
 
-Underfull \hbox (badness 5077) in paragraph at lines 198--206
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 5077) in paragraph at lines 212--220
 \T1/cmr/m/n/10 -graph -augmenter la valeur de l'arrete quand
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--206
+Underfull \hbox (badness 10000) in paragraph at lines 212--220
 \T1/cmr/m/n/10 ity https://doi.org/10.1371/journal.pone.0200091
  []
 
 
-Overfull \hbox (22.81038pt too wide) in paragraph at lines 198--206
+Overfull \hbox (22.81038pt too wide) in paragraph at lines 212--220
 \T1/cmr/m/n/10 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3719213/
  []
 
 
-Overfull \hbox (846.56528pt too wide) in paragraph at lines 209--215
-[]\T1/cmr/m/n/10 -enlever le bruit avec on-delettes http://cdn.intechopen.com/p
-dfs/34959/intech-utilising(underscore)the(underscore)wavelet(underscore)transfo
-rm(underscore)in(underscore)condition(underscore)based(underscore)maintenance(u
-nderscore)a(underscore)review(underscore)with(underscore)applications.pdf
+Overfull \hbox (3.90994pt too wide) in paragraph at lines 223--227
+[]\T1/cmr/m/n/10 -enlever le bruit avec on-delettes http://www.kyu.edu.tw/93/95
+paper/v8/95-068.pdf -Clustering -(1806.10474) 
  []
 
+<<<<<<< HEAD
 
 Overfull \hbox (4.64685pt too wide) in paragraph at lines 209--215
 \T1/cmr/m/n/10 http://www.kyu.edu.tw/93/95paper/v8/95-068.pdf -Clustering -grap
@@ -479,6 +521,38 @@ msfonts/symbols/msbm10.pfb>
 Output written on WP.pdf (6 pages, 502583 bytes).
 PDF statistics:
  290 PDF objects out of 1000 (max. 8388607)
+=======
+[6] [7 <./images/graphe.png>] (./WP.aux) ) 
+Here is how much of TeX's memory you used:
+ 3514 strings out of 494910
+ 44628 string characters out of 6179837
+ 124471 words of memory out of 5000000
+ 6739 multiletter control sequences out of 15000+600000
+ 13819 words of font info for 37 fonts, out of 8000000 for 9000
+ 36 hyphenation exceptions out of 8191
+ 38i,6n,24p,1017b,244s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/baptiste/.texmf-var/fonts/pk/
+ljfour/jknappen/ec/ecbx1000.600pk> </home/baptiste/.texmf-var/fonts/pk/ljfour/j
+knappen/ec/ecbx1200.600pk> </home/baptiste/.texmf-var/fonts/pk/ljfour/jknappen/
+ec/ecrm1000.600pk> </home/baptiste/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1
+440.600pk> </home/baptiste/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0900.600p
+k> </home/baptiste/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0900.600pk> </hom
+e/baptiste/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1440.600pk> </home/baptis
+te/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2488.600pk></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on WP.pdf (7 pages, 508791 bytes).
+PDF statistics:
+ 331 PDF objects out of 1000 (max. 8388607)
+ 81 compressed objects within 1 object stream
+>>>>>>> 3ed55f9ce5f51c4a23265cc501a1cb2d16d1bdf0
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

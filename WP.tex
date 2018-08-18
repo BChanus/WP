@@ -174,12 +174,26 @@ This method can be pretty efficient because we can also collect data from past r
 
 \section{Raw data enhancements}
 We extend here our scope of possibility to all the types of data because we need to solve the rigidity problem of the previous method. First we'll try to find a way of selecting the most influential hosts in the application i.e. the hosts for whom a variation of behavior has an important impact on the whole application. We'll then find a way to organize hosts into groups with common behaviors so that we can analyze the mean of the total group and then we'll be able to add and remove hosts from these group without losing the learning, it's also allowing more data to be used during the training of the algorithm.
-
-\subsection{Targeting influential hosts}
+\subsection{Feature selection}
+\subsubsection{Signal Processing}
+The signal we get from the historical data is full of small variation that may be due to measure errors or changes that are periodical parasite which are irrelevant to treat. Therefore we will try to eliminate as much noise as possible to get a better accuracy in the computation of the influence. Indeed we are going to use a correlation between signals to guess the influence of a variable over another so we have to take into account only the significant event.Furthermore we have to find a proper way of evaluating the influence a node has over another.
+\\
+In order to reduce the noise in our signal we'll use some wavelets theory. The choosen method is described in described in detail in (http://cdn.intechopen.com/pdfs/34959/intech-utilising(underscore)the(underscore)wavelet(underscore)transform(underscore)in(underscore)condition(underscore)based(underscore)maintenance(underscore)a(underscore)review(underscore)with(underscore)applications.pdf)
+Basically we transform the data in wavelet domain with DTCWT - which can be done with the dtcwt library in python for instance - we then do the processing, it consists in shrinking the noisy coefficient and finally we recover the de-noised signal by doing the inverse transformation.
+The transformation is a decomposition of the function into a sum of some coefficient multiplied by each vector of a family of wavelets who have specific properties (the theory is explained in detail in the paper). in this work we'll use the Daubechies' wavelets (db11) (ref : Wavelet Analysis: Mother Wavelet Selection Methods)
+\subsubsection{Influence evaluation}
 In this part it is necessary to remember that what we are doing is done before the execution of the application during a learning phase, therefore we don't have any constraints in time and the algorithm can be slow.
 \\
-Our goal is to implement a way to evaluate the influence of each host and service on each other, we can visualize this idea as a graph where the nodes are the hosts and services and the edges are oriented. The edge $(s_i,s_j)$ is linked to the value of the influence $s_i$ has over $s_j$.
-
+Our goal is to implement a way to evaluate the influence of each host and service on each other, we can visualize this idea as a graph where the nodes are the hosts and services and the edges are oriented. The edge $(s_i,s_j)$ is linked to the value of the influence $s_j$ has over $s_i$.
+\\
+(-----!-----)
+Granger causality https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5082311/ et Liang-Kleeman information flow 1403.6496 font l'hypothèse d'une correspondance linéaire (peut être ça suffit)
+Sinon on peut essayer de trouver un modèle non linéaire avec de l'apprentissage et essayer de déterminer l'influence en regardant les taux de variations respectifs...
+(-----!-----)
+The influence is assumed to be in our case the information flow between $s_i$ and $s_j$ so using the Liang-Kleeman information flow (ref!!!!) on some data we have, we can compute the value of the edges of the graph.
+\subsubsection{Targeting influential hosts}
+We now want to sort the nodes by the influence they have in the graph, we'll use the principle of the $page~rank$ algorithm on the graph where the probability to follow an edge is given by it's value of influence. This means we first normalize all the values of the edges connected to a single node, and the probability will be proportionnal to this normalized score.
+Some crawlers are put on a random starting point into the graph and they will follow random edges until a a number of steps, for each crawler who has stop on it the node will earn a score point, the nodes will then be sort by they score which should represents their influence in the network.
 \end{multicols}
 
 \vspace{0.8cm}
@@ -195,7 +209,7 @@ Our goal is to implement a way to evaluate the influence of each host and servic
 
 \begin{multicols}{2}
 
-So we have to find a proper way of evaluating the influence a node has over another.\\
+
 -graph
 -augmenter la valeur de l'arrete quand il y a correlation
 -page rank
@@ -207,9 +221,8 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3719213/
 
 \end{multicols}
 -enlever le bruit avec ondelettes 
-http://cdn.intechopen.com/pdfs/34959/intech-utilising(underscore)the(underscore)wavelet(underscore)transform(underscore)in(underscore)condition(underscore)based(underscore)maintenance(underscore)a(underscore)review(underscore)with(underscore)applications.pdf
 http://www.kyu.edu.tw/93/95paper/v8/95-068.pdf
 -Clustering
--graphes de réseau, oh mon bateau !
--(1806.10474
+-(1806.10474)
 \end{document}
+
