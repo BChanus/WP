@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="Apprentissage_V2.svg">
+  <defs
+     id="defs2">
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker1214"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path1212"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#a7a9ac;stroke-width:1pt;stroke-opacity:1;fill:#a7a9ac;fill-opacity:1"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path889"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#a7a9ac;stroke-width:1pt;stroke-opacity:1;fill:#a7a9ac;fill-opacity:1"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker1214-4"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path1212-1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-2"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path889-2"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#a7a9ac;fill-opacity:1;fill-rule:evenodd;stroke:#a7a9ac;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-2-8"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path889-2-4"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#a7a9ac;fill-opacity:1;fill-rule:evenodd;stroke:#a7a9ac;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <path
+       style="fill:none;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 95.595274,191.48688 c 22.380156,-9.53647 24.087496,-47.39917 12.313746,-63.15689 -3.14424,-4.20818 -7.51721,-5.63716 -12.180113,-6.93455"
+       id="path1210-0"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="csc" />
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker1214-7"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path1212-0"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#a7a9ac;fill-opacity:1;fill-rule:evenodd;stroke:#a7a9ac;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-1"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path889-0"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#a7a9ac;fill-opacity:1;fill-rule:evenodd;stroke:#a7a9ac;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-2-8-2"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path889-2-4-7"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#a7a9ac;fill-opacity:1;fill-rule:evenodd;stroke:#a7a9ac;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-2-8-2-8"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path889-2-4-7-5"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#a7a9ac;fill-opacity:1;fill-rule:evenodd;stroke:#a7a9ac;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-1-4"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path889-0-1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#a7a9ac;fill-opacity:1;fill-rule:evenodd;stroke:#a7a9ac;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-6"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path889-9"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#a7a9ac;fill-opacity:1;fill-rule:evenodd;stroke:#a7a9ac;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8"
+     inkscape:cx="414.87405"
+     inkscape:cy="838.85894"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="3840"
+     inkscape:window-height="2055"
+     inkscape:window-x="-13"
+     inkscape:window-y="-13"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#0067b1;stroke-width:0.69020993;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect815"
+       width="74.764969"
+       height="14.54405"
+       x="52.828171"
+       y="43.76878"
+       ry="0.51878101"
+       inkscape:export-filename="C:\Users\michael.aubertin\Desktop\Presentations\SCC_DCA\methodes_loop.png"
+       inkscape:export-xdpi="316.01923"
+       inkscape:export-ydpi="316.01923" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="62.780903"
+       y="52.845558"
+       id="text819"
+       inkscape:export-filename="C:\Users\michael.aubertin\Desktop\Presentations\SCC_DCA\methodes_loop.png"
+       inkscape:export-xdpi="316.01923"
+       inkscape:export-ydpi="316.01923"><tspan
+         sodipodi:role="line"
+         id="tspan817"
+         x="62.780903"
+         y="52.845558"
+         style="fill:#58595b;stroke-width:0.26458332">Improve noise reduction</tspan></text>
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#8dc63f;stroke-width:0.69063389;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect815-9"
+       width="74.859039"
+       height="14.543627"
+       x="52.773556"
+       y="66.504173"
+       ry="0.51876587"
+       inkscape:export-filename="C:\Users\michael.aubertin\Desktop\Presentations\SCC_DCA\methodes_loop.png"
+       inkscape:export-xdpi="316.01923"
+       inkscape:export-ydpi="316.01923" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="64.313568"
+       y="76.109917"
+       id="text819-1"
+       inkscape:export-filename="C:\Users\michael.aubertin\Desktop\Presentations\SCC_DCA\methodes_loop.png"
+       inkscape:export-xdpi="316.01923"
+       inkscape:export-ydpi="316.01923"><tspan
+         sodipodi:role="line"
+         id="tspan817-5"
+         x="64.313568"
+         y="76.109917"
+         style="fill:#58595b;stroke-width:0.26458332">Created meshed graph</tspan></text>
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#47c3d3;stroke-width:0.69063389;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect815-9-7"
+       width="74.859039"
+       height="14.543628"
+       x="52.679062"
+       y="89.74971"
+       ry="0.51876587"
+       inkscape:export-filename="C:\Users\michael.aubertin\Desktop\Presentations\SCC_DCA\methodes_loop.png"
+       inkscape:export-xdpi="316.01923"
+       inkscape:export-ydpi="316.01923" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="55.752403"
+       y="98.826286"
+       id="text819-1-5"
+       inkscape:export-filename="C:\Users\michael.aubertin\Desktop\Presentations\SCC_DCA\methodes_loop.png"
+       inkscape:export-xdpi="316.01923"
+       inkscape:export-ydpi="316.01923"><tspan
+         sodipodi:role="line"
+         id="tspan817-5-5"
+         x="55.752403"
+         y="98.826286"
+         style="fill:#58595b;stroke-width:0.26458332">Ranking nodes to define a set</tspan></text>
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#9a8b7d;stroke-width:0.69084579;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect815-9-7-4"
+       width="74.906075"
+       height="14.543417"
+       x="52.584671"
+       y="112.90086"
+       ry="0.5187583"
+       inkscape:export-filename="C:\Users\michael.aubertin\Desktop\Presentations\SCC_DCA\methodes_loop.png"
+       inkscape:export-xdpi="316.01923"
+       inkscape:export-ydpi="316.01923" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="58.832909"
+       y="121.97734"
+       id="text819-1-5-0"
+       inkscape:export-filename="C:\Users\michael.aubertin\Desktop\Presentations\SCC_DCA\methodes_loop.png"
+       inkscape:export-xdpi="316.01923"
+       inkscape:export-ydpi="316.01923"><tspan
+         sodipodi:role="line"
+         id="tspan817-5-5-1"
+         x="58.832909"
+         y="121.97734"
+         style="fill:#58595b;stroke-width:0.26458332">Dispatch nodes to families</tspan></text>
+    <path
+       style="fill:none;stroke:#a7a9ac;stroke-width:0.16500001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 90.878358,58.497729 v 7.683998"
+       id="path884"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\michael.aubertin\Desktop\Presentations\SCC_DCA\methodes_loop.png"
+       inkscape:export-xdpi="316.01923"
+       inkscape:export-ydpi="316.01923" />
+    <path
+       style="fill:none;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 95.595274,191.48688 c 22.380156,-9.53647 24.087496,-47.39917 12.313746,-63.15689 -3.14424,-4.20818 -7.51721,-5.63716 -12.180113,-6.93455"
+       id="path1210"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="csc" />
+    <path
+       style="fill:none;stroke:#a7a9ac;stroke-width:0.16500001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend-2)"
+       d="m 90.809527,81.186738 v 7.683998"
+       id="path884-4"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\michael.aubertin\Desktop\Presentations\SCC_DCA\methodes_loop.png"
+       inkscape:export-xdpi="316.01923"
+       inkscape:export-ydpi="316.01923" />
+    <path
+       style="fill:none;stroke:#a7a9ac;stroke-width:0.16500001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend-2-8)"
+       d="m 90.74271,104.57283 v 7.68399"
+       id="path884-4-1"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\michael.aubertin\Desktop\Presentations\SCC_DCA\methodes_loop.png"
+       inkscape:export-xdpi="316.01923"
+       inkscape:export-ydpi="316.01923" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#917c6f;stroke-width:0.16515565;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect815-6"
+       width="47.959301"
+       height="24.685553"
+       x="148.70821"
+       y="8.1676378"
+       ry="0.88052469"
+       inkscape:export-filename="C:\Users\michael.aubertin\Desktop\Presentations\SCC_DCA\methodes_loop.png"
+       inkscape:export-xdpi="316.01923"
+       inkscape:export-ydpi="316.01923" />
+    <path
+       style="fill:none;stroke:#917c6f;stroke-width:0.16500001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.165, 0.99;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 127.56696,51.40997 3.75596,7.87e-4 5.92685,-31.752651 11.01139,-0.09263"
+       id="path2905"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-xdpi="316"
+       inkscape:export-ydpi="316" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:3.88055556px;line-height:1.25;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       x="150.52902"
+       y="14.273809"
+       id="text2909"><tspan
+         sodipodi:role="line"
+         id="tspan2907"
+         x="150.52902"
+         y="20.161829"
+         style="stroke-width:0.26458332;font-size:3.88055556px;" /></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot2925"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:13.33333397px;line-height:0;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,2.2678571,-27.592262)"
+       inkscape:export-xdpi="316"
+       inkscape:export-ydpi="316"><flowRegion
+         id="flowRegion2927"><rect
+           id="rect2929"
+           width="172.5"
+           height="96.785713"
+           x="558.57141"
+           y="138.23398" /></flowRegion><flowPara
+         id="flowPara2933"
+         style="font-size:14.66666698px;line-height:1;text-align:justify;text-anchor:start">In addition to Fourier approach we plan to use DCTWT Daubechies wavelets. It aims to distinguish revelant nodes by reducing  unusual values of nodes.</flowPara></flowRoot>    <rect
+       style="fill:none;fill-opacity:1;stroke:#917c6f;stroke-width:0.16765282;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect815-6-0"
+       width="47.956806"
+       height="25.439011"
+       x="148.66223"
+       y="34.816208"
+       ry="0.90740025"
+       inkscape:export-filename="C:\Users\michael.aubertin\Desktop\Presentations\SCC_DCA\methodes_loop.png"
+       inkscape:export-xdpi="316.01923"
+       inkscape:export-ydpi="316.01923" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot2925-0"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:13.33333397px;line-height:0;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,2.0120002,-0.82273786)"
+       inkscape:export-xdpi="316"
+       inkscape:export-ydpi="316"><flowRegion
+         id="flowRegion2927-9"><rect
+           id="rect2929-9"
+           width="172.5"
+           height="96.785713"
+           x="558.57141"
+           y="138.23398" /></flowRegion><flowPara
+         id="flowPara2933-7"
+         style="font-size:14.66666698px;line-height:1;text-align:justify;text-anchor:start">Each final point of monitoring, formelly a value, are now consider as a nodes. We mesh all the nodes to all each others to design an undistiguished graph.</flowPara></flowRoot>    <path
+       style="fill:none;stroke:#917c6f;stroke-width:0.16500001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.165, 0.99000001;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 128.01058,73.488274 2.21818,-0.0066 7.08665,-29.288372 11.29487,0.190853"
+       id="path2905-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-xdpi="316"
+       inkscape:export-ydpi="316" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot2925-0-6"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:13.33333397px;line-height:0;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,1.8385339,27.822212)"
+       inkscape:export-xdpi="316"
+       inkscape:export-ydpi="316"><flowRegion
+         id="flowRegion2927-9-2"><rect
+           id="rect2929-9-6"
+           width="172.5"
+           height="96.785713"
+           x="558.57141"
+           y="138.23398" /></flowRegion><flowPara
+         id="flowPara2933-7-8"
+         style="font-size:14.66666698px;line-height:1;text-align:justify;text-anchor:start">We plan to use Google PageRank sum algorithm to identify most revelant nodes in the mesh. Once all node ranked, we will select a set revelant nodes.</flowPara></flowRoot>    <rect
+       style="fill:none;fill-opacity:1;stroke:#917c6f;stroke-width:0.16765282;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect815-6-0-4"
+       width="47.956806"
+       height="25.439013"
+       x="148.56772"
+       y="64.01487"
+       ry="0.90740025"
+       inkscape:export-filename="C:\Users\michael.aubertin\Desktop\Presentations\SCC_DCA\methodes_loop.png"
+       inkscape:export-xdpi="316.01923"
+       inkscape:export-ydpi="316.01923" />
+    <path
+       style="fill:none;stroke:#917c6f;stroke-width:0.16500001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.165, 0.99000002;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 127.63259,97.584253 3.12559,-0.02617 9.67552,-22.559765 7.7041,0.190853"
+       id="path2905-7-2"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-xdpi="316"
+       inkscape:export-ydpi="316" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot2925-0-6-0"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:13.33333397px;line-height:0;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,1.3187093,58.249208)"
+       inkscape:export-xdpi="316"
+       inkscape:export-ydpi="316"><flowRegion
+         id="flowRegion2927-9-2-9"><rect
+           id="rect2929-9-6-6"
+           width="176.78572"
+           height="118.57142"
+           x="558.57141"
+           y="138.23398" /></flowRegion><flowPara
+         id="flowPara2933-7-8-5"
+         style="font-size:14.66666698px;line-height:1;text-align:justify;text-anchor:start">Supposed unrevelant node or not yet ranked node we be tagged in families. It aims to allow dynamic commission and decommision of nodes between trainning phase and usage of non supervised AI.</flowPara></flowRoot>    <rect
+       style="fill:none;fill-opacity:1;stroke:#917c6f;stroke-width:0.177582;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect815-6-0-4-7"
+       width="47.946877"
+       height="28.54739"
+       x="148.43083"
+       y="93.879868"
+       ry="1.0182748"
+       inkscape:export-filename="C:\Users\michael.aubertin\Desktop\Presentations\SCC_DCA\methodes_loop.png"
+       inkscape:export-xdpi="316.01923"
+       inkscape:export-ydpi="316.01923" />
+    <path
+       style="fill:none;stroke:#917c6f;stroke-width:0.16500001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.165, 0.99000003;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 127.49075,120.35723 4.44851,-0.1207 8.35259,-15.37821 7.7041,0.19085"
+       id="path2905-7-2-9"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-xdpi="316"
+       inkscape:export-ydpi="316" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#f47b20;stroke-width:0.69099998;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.98861479"
+       id="rect815-9-7-4-1"
+       width="74.906082"
+       height="14.543417"
+       x="52.599785"
+       y="20.495852"
+       ry="0.5187583"
+       inkscape:export-filename="C:\Users\michael.aubertin\Desktop\Presentations\SCC_DCA\methodes_loop.png"
+       inkscape:export-xdpi="316.01923"
+       inkscape:export-ydpi="316.01923" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.69099998;stroke-miterlimit:4;stroke-dasharray:none"
+       x="66.78553"
+       y="29.572329"
+       id="text819-1-5-0-1"
+       inkscape:export-filename="C:\Users\michael.aubertin\Desktop\Presentations\SCC_DCA\methodes_loop.png"
+       inkscape:export-xdpi="316.01923"
+       inkscape:export-ydpi="316.01923"><tspan
+         sodipodi:role="line"
+         id="tspan817-5-5-1-3"
+         x="66.78553"
+         y="29.572329"
+         style="fill:#58595b;stroke-width:0.69099998;stroke-miterlimit:4;stroke-dasharray:none">Supervised trainning</tspan></text>
+    <path
+       style="fill:none;stroke:#a7a9ac;stroke-width:0.16500001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend-1)"
+       d="M 90.903274,35.388152 V 43.07215"
+       id="path884-5"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\michael.aubertin\Desktop\Presentations\SCC_DCA\methodes_loop.png"
+       inkscape:export-xdpi="316.01923"
+       inkscape:export-ydpi="316.01923" />
+    <path
+       style="fill:none;stroke:#a7a9ac;stroke-width:0.16500001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend-2-8-2)"
+       d="m 90.714286,127.25528 -0.01851,6.277 -59.57273,0.16979 0.375244,-61.123614 0.01886,-11.2537"
+       id="path884-4-1-1"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\michael.aubertin\Desktop\Presentations\SCC_DCA\methodes_loop.png"
+       inkscape:export-xdpi="316.01923"
+       inkscape:export-ydpi="316.01923"
+       sodipodi:nodetypes="ccccc" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#a7a9ac;stroke-width:0.56529504;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4436"
+       width="15.636133"
+       height="15.35798"
+       x="-19.98955"
+       y="50.633068"
+       transform="matrix(0.71878468,-0.69523276,0.69532659,0.71869391,0,0)"
+       inkscape:export-xdpi="316"
+       inkscape:export-ydpi="316" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="31.809414"
+       y="49.142113"
+       id="text4446"
+       inkscape:export-xdpi="316"
+       inkscape:export-ydpi="316"><tspan
+         sodipodi:role="line"
+         id="tspan4444"
+         x="32.233162"
+         y="49.142113"
+         style="text-align:center;text-anchor:middle;stroke-width:0.26458332">Quantity </tspan><tspan
+         sodipodi:role="line"
+         x="31.809414"
+         y="53.551834"
+         style="text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         id="tspan4448">evaluation</tspan></text>
+    <path
+       style="fill:none;stroke:#a7a9ac;stroke-width:0.16500001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend-1-4)"
+       d="M 32.077349,39.416315 32.062443,27.646508 52.255208,27.499545"
+       id="path884-5-2"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\michael.aubertin\Desktop\Presentations\SCC_DCA\methodes_loop.png"
+       inkscape:export-xdpi="316.01923"
+       inkscape:export-ydpi="316.01923"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#a7a9ac;stroke-width:0.16500001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend-6)"
+       d="m 42.756163,50.454004 9.499045,-0.0869"
+       id="path884-2"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\michael.aubertin\Desktop\Presentations\SCC_DCA\methodes_loop.png"
+       inkscape:export-xdpi="316.01923"
+       inkscape:export-ydpi="316.01923"
+       sodipodi:nodetypes="cc" />
+  </g>
+</svg>
