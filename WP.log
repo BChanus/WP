@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.8.8)  18 AUG 2018 16:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.8.8)  20 AUG 2018 20:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -521,21 +521,33 @@ Package: multicol 2015/08/19 v1.8n multicolumn formatting (FMi)
 \mult@nat@firstbox=\box52
 \colbreak@box=\box53
 \mc@col@check@num=\count111
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2015/03/04 v2.20.2
+\thm@style=\toks25
+\thm@bodyfont=\toks26
+\thm@headfont=\toks27
+\thm@notefont=\toks28
+\thm@headpunct=\toks29
+\thm@preskip=\skip48
+\thm@postskip=\skip49
+\thm@headsep=\skip50
+\dth@everypar=\toks30
 ) (./WP.aux)
 \openout1 = `WP.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -544,12 +556,12 @@ LaTeX Font Info:    ... okay on input line 15.
 \scratchbox=\box54
 \nofMPsegments=\count113
 \nofMParguments=\count114
-\everyMPshowfont=\toks25
+\everyMPshowfont=\toks31
 \MPscratchCnt=\count115
 \MPscratchDim=\dimen132
 \MPnumerator=\count116
 \makeMPintoPDFobject=\count117
-\everyMPtoPDFconversion=\toks26
+\everyMPtoPDFconversion=\toks32
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -632,10 +644,10 @@ e
 File: ./images/arbrerelations.png Graphic file (type png)
 
 <use ./images/arbrerelations.png>
-Package pdftex.def Info: ./images/arbrerelations.png used on input line 66.
+Package pdftex.def Info: ./images/arbrerelations.png used on input line 67.
 (pdftex.def)             Requested size: 503.78967pt x 269.81204pt.
 
-Overfull \hbox (20.0928pt too wide) in paragraph at lines 66--67
+Overfull \hbox (20.0928pt too wide) in paragraph at lines 67--68
  [][] 
  []
 
@@ -648,14 +660,14 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <./images/image.png, id=15, 722.7pt x 301.125pt>
 File: ./images/image.png Graphic file (type png)
  <use ./images/image.png>
-Package pdftex.def Info: ./images/image.png used on input line 82.
+Package pdftex.def Info: ./images/image.png used on input line 83.
 (pdftex.def)             Requested size: 361.3491pt x 150.56212pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 94.
+LaTeX Font Info:    Try loading font information for U+msa on input line 95.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 94.
+LaTeX Font Info:    Try loading font information for U+msb on input line 95.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -664,10 +676,10 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: ./images/reseau.png Graphic file (type png)
 
 <use ./images/reseau.png>
-Package pdftex.def Info: ./images/reseau.png used on input line 112.
+Package pdftex.def Info: ./images/reseau.png used on input line 113.
 (pdftex.def)             Requested size: 492.5475pt x 270.51468pt.
 
-Overfull \hbox (8.85063pt too wide) in paragraph at lines 112--113
+Overfull \hbox (8.85063pt too wide) in paragraph at lines 113--114
  [][] 
  []
 
@@ -675,44 +687,44 @@ Overfull \hbox (8.85063pt too wide) in paragraph at lines 112--113
 File: ./images/fitness.png Graphic file (type png)
 
 <use ./images/fitness.png>
-Package pdftex.def Info: ./images/fitness.png used on input line 155.
+Package pdftex.def Info: ./images/fitness.png used on input line 156.
 (pdftex.def)             Requested size: 449.67694pt x 281.04808pt.
  [4 <./images/fitness.png>]
 <./images/population.png, id=41, 1445.4pt x 777.90625pt>
 File: ./images/population.png Graphic file (type png)
 
 <use ./images/population.png>
-Package pdftex.def Info: ./images/population.png used on input line 171.
+Package pdftex.def Info: ./images/population.png used on input line 172.
 (pdftex.def)             Requested size: 505.89758pt x 272.27126pt.
 
-Overfull \hbox (22.20071pt too wide) in paragraph at lines 171--172
+Overfull \hbox (22.20071pt too wide) in paragraph at lines 172--173
  [][] 
  []
 
 [5 <./images/population.png>]
-Underfull \hbox (badness 8019) in paragraph at lines 190--195
+Underfull \hbox (badness 8019) in paragraph at lines 191--196
 \T1/cmr/m/n/10 In or-der to re-duce the noise in our sig-nal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 190--195
+Underfull \hbox (badness 10000) in paragraph at lines 191--196
 \T1/cmr/m/n/10 method is de-scribed in de-scribed in de-tail
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 190--195
+Underfull \hbox (badness 10000) in paragraph at lines 191--196
 \T1/cmr/m/n/10 in (http://cdn.intechopen.com/pdfs/34959/intech-
  []
 
 
-Overfull \hbox (741.60707pt too wide) in paragraph at lines 190--195
+Overfull \hbox (741.60707pt too wide) in paragraph at lines 191--196
 \T1/cmr/m/n/10 utilising(underscore)the(underscore)wavelet(underscore)transform
 (underscore)in(underscore)condition(underscore)based(underscore)maintenance(und
 erscore)a(underscore)review(underscore)with(underscore)applications.pdf)
  []
 
 
-Overfull \hbox (144.07243pt too wide) in paragraph at lines 196--205
+Overfull \hbox (144.07243pt too wide) in paragraph at lines 197--206
 \T1/cmr/m/n/10 (-----!-----) Granger causal-ity https://www.ncbi.nlm.nih.gov/pm
 c/articles/PMC5082311/
  []
@@ -721,55 +733,49 @@ c/articles/PMC5082311/
 File: ./images/graphe.png Graphic file (type png)
 
 <use ./images/graphe.png>
-Package pdftex.def Info: ./images/graphe.png used on input line 214.
+Package pdftex.def Info: ./images/graphe.png used on input line 223.
 (pdftex.def)             Requested size: 425.4857pt x 349.60289pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 224--231
-\T1/cmr/m/n/10 ity https://doi.org/10.1371/journal.pone.0200091
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 232--235
+[]\T1/cmr/m/n/10 https://doi.org/10.1371/journal.pone.0200091
  []
 
 
-Overfull \hbox (22.81038pt too wide) in paragraph at lines 224--231
+Overfull \hbox (22.81038pt too wide) in paragraph at lines 232--235
 \T1/cmr/m/n/10 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3719213/
  []
 
-
-Overfull \hbox (3.90994pt too wide) in paragraph at lines 234--238
-[]\T1/cmr/m/n/10 -enlever le bruit avec on-delettes http://www.kyu.edu.tw/93/95
-paper/v8/95-068.pdf -Clustering -(1806.10474) 
- []
-
-[6] [7 <./images/graphe.png>] (./WP.aux) ) 
+[7 <./images/graphe.png>] (./WP.aux) ) 
 Here is how much of TeX's memory you used:
- 3541 strings out of 494910
- 45105 string characters out of 6179837
- 124102 words of memory out of 5000000
- 6764 multiletter control sequences out of 15000+600000
+ 3610 strings out of 494910
+ 45945 string characters out of 6179837
+ 132311 words of memory out of 5000000
+ 6829 multiletter control sequences out of 15000+600000
  13819 words of font info for 37 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  38i,6n,24p,1017b,244s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/baptiste/.texmf-var/fonts/pk/
-ljfour/jknappen/ec/ecbx1000.600pk> </home/baptiste/.texmf-var/fonts/pk/ljfour/j
-knappen/ec/ecbx1200.600pk> </home/baptiste/.texmf-var/fonts/pk/ljfour/jknappen/
-ec/ecrm1000.600pk> </home/baptiste/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1
-440.600pk> </home/baptiste/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0900.600p
-k> </home/baptiste/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0900.600pk> </hom
-e/baptiste/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1440.600pk> </home/baptis
-te/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2488.600pk></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on WP.pdf (7 pages, 509568 bytes).
+ </home/baptiste/.texmf-var/fonts/pk/ljfo
+ur/jknappen/ec/ecbx1000.600pk> </home/baptiste/.texmf-var/fonts/pk/ljfour/jknap
+pen/ec/ecbx1200.600pk> </home/baptiste/.texmf-var/fonts/pk/ljfour/jknappen/ec/e
+crm1000.600pk> </home/baptiste/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.
+600pk> </home/baptiste/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0900.600pk> <
+/home/baptiste/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0900.600pk> </home/ba
+ptiste/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1440.600pk> </home/baptiste/.
+texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2488.600pk></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on WP.pdf (7 pages, 513989 bytes).
 PDF statistics:
  333 PDF objects out of 1000 (max. 8388607)
  81 compressed objects within 1 object stream

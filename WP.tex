@@ -8,6 +8,7 @@
 \usepackage{graphicx}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \usepackage{multicol}
+\usepackage{amsthm}
 \author{Baptiste Chanus}
 
 \title{White Paper}
@@ -203,32 +204,17 @@ Sinon on peut essayer de trouver un modèle non linéaire avec de l'apprentissag
 (-----!-----)
 The influence is assumed to be in our case the information flow between $s_i$ and $s_j$ so using the Liang-Kleeman information flow -----(ref!!!!)----- on some data we have, we can compute the value of the edges of the graph.
 \subsubsection{Targeting influential hosts}
-We now want to sort the nodes by the influence they have in the graph, we'll use the principle of the $page~rank$ algorithm on the graph where the probability to follow an edge is given by it's value of influence. this is however slightly different than the classical PageRank algorithm because edges have weights. Intuitively it can be seen as a random walk throughout the graph with the probability to follow an edge proportionnal to its weight. To compute it however, we'll  use the power method witch is a simple and fast way to compute it -----http://ilpubs.stanford.edu:8090/422/1/1999-66.pdf ------ (principe ? python ? les deux sont sur wikipédia si besoin) 
-
-(
-import numpy as np
-
-def pagerank(M, eps=1.0e-8, d=0.85):
-    N = M.shape[1]
-    v = np.random.rand(N, 1)
-    v = v / np.linalg.norm(v, 1)
-    last_v = np.ones((N, 1), dtype=np.float32) * np.inf
-    M_hat = (d * M) + (((1 - d) / N) * np.ones((N, N), dtype=np.float32))
-    
-    while np.linalg.norm(v - last_v, 2) > eps:
-        last_v = v
-        v = np.matmul(M_hat, v)
-    return v
-
-M = np.array([[0, 0, 0, 0, 1],
-              [0.5, 0, 0, 0, 0],
-              [0.5, 0, 0, 0, 0],
-              [0, 1, 0.5, 0, 0],
-              [0, 0, 0.5, 1, 0]])
-v = pagerank(M, 0.001, 0.85)
-)
-
+We now want to sort the nodes by the influence they have in the graph, we'll use the principle of the $page~rank$ algorithm on the graph where the probability to follow an edge is given by it's value of influence. this is however slightly different than the classical PageRank algorithm because edges have weights. Intuitively it can be seen as a random walk throughout the graph with the probability to follow an edge proportionnal to its weight. To compute it however, we'll  use the power method witch is a simple and fast way to compute it. Letting $M$ the matrix of transition between the nodes, we obtain it by normalizing the scores of the edges coming out of a node and using them as probability. We compute the rank vector $X$ by starting with an arbitrary $X_0$ and then using :
+	\[X_{t+1} = (dM + \frac{1-d}{N}J_N)X_t\]
+until we reach :
+	\[ \mid{X_t+1 - X_t}\mid < \epsilon\]
+where $\epsilon$ is an arbitrarly small parameter, $N$ is the total number of nodes in the graph i.e. the number of hosts and services in the application, $J_N$ is the square matrix of size N containing only ones and finally $d$ is a parameter which represent the probability of stoping the random walk set at $0.85$ because it as been shown by experimentation done by Google that it is the optimal value to have both a decent converging rate and chance of a reaching the $X$ vector we are computing.
 \end{multicols}
+
+-----http://ilpubs.stanford.edu:8090/422/1/1999-66.pdf ------ 
+
+
+
 
 \vspace{0.8cm}
 
