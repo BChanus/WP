@@ -1,4 +1,37 @@
 \documentclass[10pt,a4paper,oneside]{article}
+
+\usepackage{listings}
+\usepackage{color}
+ 
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+ 
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+ 
+\lstset{style=mystyle}
+
+
+
+
 \usepackage[utf8]{inputenc}
 \usepackage{verbatim}
 \usepackage[T1]{fontenc}
@@ -192,6 +225,21 @@ The signal we get from the historical data is full of small variation that may b
 \\
 In order to reduce the noise in our signal we'll use some wavelets theory. The choosen method is described in described in detail in (http://cdn.intechopen.com/pdfs/34959/intech-utilising(underscore)the(underscore)wavelet(underscore)transform(underscore)in(underscore)condition(underscore)based(underscore)maintenance(underscore)a(underscore)review(underscore)with(underscore)applications.pdf)
 Basically we transform the data in wavelet domain with DTCWT - which can be done with the dtcwt library in python for instance -----(détails ?!?!?!?!)----- - we then do the processing, it consists in shrinking the noisy coefficient and finally we recover the de-noised signal by doing the inverse transformation.
+\end{multicols}
+\begin{lstlisting}[language=Python, caption=Python dtcwt library example]
+from matplotlib.pylab import *
+import dtcwt
+
+
+# 1D transform, 5 levels
+transform = dtcwt.Transform1d()
+vecs_t = transform.forward(vecs, nlevels=5)
+
+# Inverse
+vecs_recon = transform.inverse(vecs_t)
+\end{lstlisting}
+
+\begin{multicols}{2}
 The transformation is a decomposition of the function into a sum of some coefficient multiplied by each vector of a family of wavelets who have specific properties (the theory is explained in detail in the paper). in this work we'll use the Daubechies' wavelets (db11) (ref : Wavelet Analysis: Mother Wavelet Selection Methods)
 \subsubsection{Influence evaluation}
 In this part it is necessary to remember that what we are doing is done before the execution of the application during a learning phase, therefore we don't have any constraints in time and the algorithm can be slow.
@@ -210,6 +258,27 @@ until we reach :
 	\[ \mid{X_t+1 - X_t}\mid < \epsilon\]
 where $\epsilon$ is an arbitrarly small parameter, $N$ is the total number of nodes in the graph i.e. the number of hosts and services in the application, $J_N$ is the square matrix of size N containing only ones and finally $d$ is a parameter which represent the probability of stoping the random walk set at $0.85$ because it as been shown by experimentation done by Google that it is the optimal value to have both a decent converging rate and chance of a reaching the $X$ vector we are computing.
 \end{multicols}
+
+\begin{lstlisting}[language=Python, caption=Python Power Method]
+import numpy as np
+
+def pagerank(M, eps, d=0.85):
+    N = M.shape[1]
+    X = np.random.rand(N, 1)
+    X = X / np.linalg.norm(X, 1)
+    X_{t-1} = np.ones((N, 1), dtype=np.float32) * np.inf
+    T = (d * M) + (((1 - d) / N) * np.ones((N, N), dtype=np.float32))
+    
+    while np.linalg.norm(X - X_{t-1}, 2) > eps: 
+        X_{t-1} = X
+        X = np.matmul(T, X)
+    return X
+
+\end{lstlisting}
+
+\subsubsection{Conclusion}
+Using these different techniques we manage to get a subset of all the hosts and services which are the one with most influence on the whole application. We can focus our learning on these particular variables. Which means that we'll have to deal with architectural changes of the application less often, beside it should also lighten the computations during the training phase. However we'll try to get some more information by grouping the other variables together insuring the flexibility of the application and light computations.\\
+\subsection{Grouping features}
 
 -----http://ilpubs.stanford.edu:8090/422/1/1999-66.pdf ------ 
 

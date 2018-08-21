@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.8.8)  20 AUG 2018 20:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.8.8)  21 AUG 2018 18:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -23,10 +23,58 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+\lst@mode=\count87
+\lst@gtempboxa=\box26
+\lst@token=\toks15
+\lst@length=\count88
+\lst@currlwidth=\dimen103
+\lst@column=\count89
+\lst@pos=\count90
+\lst@lostspace=\dimen104
+\lst@width=\dimen105
+\lst@newlines=\count91
+\lst@lineno=\count92
+\lst@maxwidth=\dimen106
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count93
+\lst@skipnumbers=\count94
+\lst@framebox=\box27
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/01/03 v1.1b Standard LaTeX Color (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 143.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count95
+))
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
-\inpenc@prehook=\toks14
-\inpenc@posthook=\toks15
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2015/12/03 v1.1r UTF-8 support for inputenc
@@ -335,8 +383,8 @@ Now handling font encoding U ...
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks16
-\verbatim@line=\toks17
+\every@verbatim=\toks18
+\verbatim@line=\toks19
 \verbatim@in@stream=\read1
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
@@ -356,51 +404,51 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks18
-\ex@=\dimen103
+\@emptytoks=\toks20
+\ex@=\dimen107
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen104
+\pmbraise@=\dimen108
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count87
+\inf@bad=\count96
 LaTeX Info: Redefining \frac on input line 199.
-\uproot@=\count88
-\leftroot@=\count89
+\uproot@=\count97
+\leftroot@=\count98
 LaTeX Info: Redefining \overline on input line 297.
-\classnum@=\count90
-\DOTSCASE@=\count91
+\classnum@=\count99
+\DOTSCASE@=\count100
 LaTeX Info: Redefining \ldots on input line 394.
 LaTeX Info: Redefining \dots on input line 397.
 LaTeX Info: Redefining \cdots on input line 518.
-\Mathstrutbox@=\box26
-\strutbox@=\box27
-\big@size=\dimen105
+\Mathstrutbox@=\box28
+\strutbox@=\box29
+\big@size=\dimen109
 LaTeX Font Info:    Redeclaring font encoding OML on input line 630.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
-\macc@depth=\count92
-\c@MaxMatrixCols=\count93
+\macc@depth=\count101
+\c@MaxMatrixCols=\count102
 \dotsspace@=\muskip10
-\c@parentequation=\count94
-\dspbrk@lvl=\count95
-\tag@help=\toks19
-\row@=\count96
-\column@=\count97
-\maxfields@=\count98
-\andhelp@=\toks20
-\eqnshift@=\dimen106
-\alignsep@=\dimen107
-\tagshift@=\dimen108
-\tagwidth@=\dimen109
-\totwidth@=\dimen110
-\lineht@=\dimen111
-\@envbody=\toks21
+\c@parentequation=\count103
+\dspbrk@lvl=\count104
+\tag@help=\toks21
+\row@=\count105
+\column@=\count106
+\maxfields@=\count107
+\andhelp@=\toks22
+\eqnshift@=\dimen110
+\alignsep@=\dimen111
+\tagshift@=\dimen112
+\tagwidth@=\dimen113
+\totwidth@=\dimen114
+\lineht@=\dimen115
+\@envbody=\toks23
 \multlinegap=\skip44
 \multlinetaggap=\skip45
-\mathdisplay@stack=\toks22
+\mathdisplay@stack=\toks24
 LaTeX Info: Redefining \[ on input line 2735.
 LaTeX Info: Redefining \] on input line 2736.
 )
@@ -417,10 +465,6 @@ Package: amssymb 2013/01/14 v3.01 AMS font symbols
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks23
-)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
 
@@ -431,20 +475,9 @@ Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 95.
-
-(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
-)
-\Gread@gobject=\count99
-))
-\Gin@req@height=\dimen112
-\Gin@req@width=\dimen113
+\Gin@req@height=\dimen116
+\Gin@req@width=\dimen117
 )
 (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
@@ -460,44 +493,42 @@ Package ifvtex Info: VTeX not detected.
 (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count100
-\Gm@cntv=\count101
-\c@Gm@tempcnt=\count102
-\Gm@bindingoffset=\dimen114
-\Gm@wd@mp=\dimen115
-\Gm@odd@mp=\dimen116
-\Gm@even@mp=\dimen117
-\Gm@layoutwidth=\dimen118
-\Gm@layoutheight=\dimen119
-\Gm@layouthoffset=\dimen120
-\Gm@layoutvoffset=\dimen121
-\Gm@dimlist=\toks24
+\Gm@cnth=\count108
+\Gm@cntv=\count109
+\c@Gm@tempcnt=\count110
+\Gm@bindingoffset=\dimen118
+\Gm@wd@mp=\dimen119
+\Gm@odd@mp=\dimen120
+\Gm@even@mp=\dimen121
+\Gm@layoutwidth=\dimen122
+\Gm@layoutheight=\dimen123
+\Gm@layouthoffset=\dimen124
+\Gm@layoutvoffset=\dimen125
+\Gm@dimlist=\toks25
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2015/08/19 v1.8n multicolumn formatting (FMi)
-\c@tracingmulticols=\count103
-\mult@box=\box28
-\multicol@leftmargin=\dimen122
-\c@unbalance=\count104
-\c@collectmore=\count105
-\doublecol@number=\count106
-\multicoltolerance=\count107
-\multicolpretolerance=\count108
-\full@width=\dimen123
-\page@free=\dimen124
-\premulticols=\dimen125
-\postmulticols=\dimen126
+\c@tracingmulticols=\count111
+\mult@box=\box30
+\multicol@leftmargin=\dimen126
+\c@unbalance=\count112
+\c@collectmore=\count113
+\doublecol@number=\count114
+\multicoltolerance=\count115
+\multicolpretolerance=\count116
+\full@width=\dimen127
+\page@free=\dimen128
+\premulticols=\dimen129
+\postmulticols=\dimen130
 \multicolsep=\skip46
 \multicolbaselineskip=\skip47
-\partial@page=\box29
-\last@line=\box30
-\maxbalancingoverflow=\dimen127
-\mult@rightbox=\box31
-\mult@grightbox=\box32
-\mult@gfirstbox=\box33
-\mult@firstbox=\box34
-\@tempa=\box35
-\@tempa=\box36
+\partial@page=\box31
+\last@line=\box32
+\maxbalancingoverflow=\dimen131
+\mult@rightbox=\box33
+\mult@grightbox=\box34
+\mult@gfirstbox=\box35
+\mult@firstbox=\box36
 \@tempa=\box37
 \@tempa=\box38
 \@tempa=\box39
@@ -513,55 +544,58 @@ Package: multicol 2015/08/19 v1.8n multicolumn formatting (FMi)
 \@tempa=\box49
 \@tempa=\box50
 \@tempa=\box51
-\c@columnbadness=\count109
-\c@finalcolumnbadness=\count110
-\last@try=\dimen128
-\multicolovershoot=\dimen129
-\multicolundershoot=\dimen130
-\mult@nat@firstbox=\box52
-\colbreak@box=\box53
-\mc@col@check@num=\count111
+\@tempa=\box52
+\@tempa=\box53
+\c@columnbadness=\count117
+\c@finalcolumnbadness=\count118
+\last@try=\dimen132
+\multicolovershoot=\dimen133
+\multicolundershoot=\dimen134
+\mult@nat@firstbox=\box54
+\colbreak@box=\box55
+\mc@col@check@num=\count119
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2015/03/04 v2.20.2
-\thm@style=\toks25
-\thm@bodyfont=\toks26
-\thm@headfont=\toks27
-\thm@notefont=\toks28
-\thm@headpunct=\toks29
+\thm@style=\toks26
+\thm@bodyfont=\toks27
+\thm@headfont=\toks28
+\thm@notefont=\toks29
+\thm@headpunct=\toks30
 \thm@preskip=\skip48
 \thm@postskip=\skip49
 \thm@headsep=\skip50
-\dth@everypar=\toks30
+\dth@everypar=\toks31
 ) (./WP.aux)
 \openout1 = `WP.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+\c@lstlisting=\count120
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count112
-\scratchdimen=\dimen131
-\scratchbox=\box54
-\nofMPsegments=\count113
-\nofMParguments=\count114
-\everyMPshowfont=\toks31
-\MPscratchCnt=\count115
-\MPscratchDim=\dimen132
-\MPnumerator=\count116
-\makeMPintoPDFobject=\count117
-\everyMPtoPDFconversion=\toks32
+\scratchcounter=\count121
+\scratchdimen=\dimen135
+\scratchbox=\box56
+\nofMPsegments=\count122
+\nofMParguments=\count123
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count124
+\MPscratchDim=\dimen136
+\MPnumerator=\count125
+\makeMPintoPDFobject=\count126
+\everyMPtoPDFconversion=\toks33
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -644,10 +678,10 @@ e
 File: ./images/arbrerelations.png Graphic file (type png)
 
 <use ./images/arbrerelations.png>
-Package pdftex.def Info: ./images/arbrerelations.png used on input line 67.
+Package pdftex.def Info: ./images/arbrerelations.png used on input line 100.
 (pdftex.def)             Requested size: 503.78967pt x 269.81204pt.
 
-Overfull \hbox (20.0928pt too wide) in paragraph at lines 67--68
+Overfull \hbox (20.0928pt too wide) in paragraph at lines 100--101
  [][] 
  []
 
@@ -660,14 +694,14 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <./images/image.png, id=15, 722.7pt x 301.125pt>
 File: ./images/image.png Graphic file (type png)
  <use ./images/image.png>
-Package pdftex.def Info: ./images/image.png used on input line 83.
+Package pdftex.def Info: ./images/image.png used on input line 116.
 (pdftex.def)             Requested size: 361.3491pt x 150.56212pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 95.
+LaTeX Font Info:    Try loading font information for U+msa on input line 128.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 95.
+LaTeX Font Info:    Try loading font information for U+msb on input line 128.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -676,10 +710,10 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: ./images/reseau.png Graphic file (type png)
 
 <use ./images/reseau.png>
-Package pdftex.def Info: ./images/reseau.png used on input line 113.
+Package pdftex.def Info: ./images/reseau.png used on input line 146.
 (pdftex.def)             Requested size: 492.5475pt x 270.51468pt.
 
-Overfull \hbox (8.85063pt too wide) in paragraph at lines 113--114
+Overfull \hbox (8.85063pt too wide) in paragraph at lines 146--147
  [][] 
  []
 
@@ -687,98 +721,108 @@ Overfull \hbox (8.85063pt too wide) in paragraph at lines 113--114
 File: ./images/fitness.png Graphic file (type png)
 
 <use ./images/fitness.png>
-Package pdftex.def Info: ./images/fitness.png used on input line 156.
+Package pdftex.def Info: ./images/fitness.png used on input line 189.
 (pdftex.def)             Requested size: 449.67694pt x 281.04808pt.
  [4 <./images/fitness.png>]
 <./images/population.png, id=41, 1445.4pt x 777.90625pt>
 File: ./images/population.png Graphic file (type png)
 
 <use ./images/population.png>
-Package pdftex.def Info: ./images/population.png used on input line 172.
+Package pdftex.def Info: ./images/population.png used on input line 205.
 (pdftex.def)             Requested size: 505.89758pt x 272.27126pt.
 
-Overfull \hbox (22.20071pt too wide) in paragraph at lines 172--173
+Overfull \hbox (22.20071pt too wide) in paragraph at lines 205--206
  [][] 
  []
 
 [5 <./images/population.png>]
-Underfull \hbox (badness 8019) in paragraph at lines 191--196
+Underfull \hbox (badness 8019) in paragraph at lines 224--228
 \T1/cmr/m/n/10 In or-der to re-duce the noise in our sig-nal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--196
+Underfull \hbox (badness 10000) in paragraph at lines 224--228
 \T1/cmr/m/n/10 method is de-scribed in de-scribed in de-tail
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--196
+Underfull \hbox (badness 10000) in paragraph at lines 224--228
 \T1/cmr/m/n/10 in (http://cdn.intechopen.com/pdfs/34959/intech-
  []
 
 
-Overfull \hbox (741.60707pt too wide) in paragraph at lines 191--196
+Overfull \hbox (741.60707pt too wide) in paragraph at lines 224--228
 \T1/cmr/m/n/10 utilising(underscore)the(underscore)wavelet(underscore)transform
 (underscore)in(underscore)condition(underscore)based(underscore)maintenance(und
 erscore)a(underscore)review(underscore)with(underscore)applications.pdf)
  []
 
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 230.
 
-Overfull \hbox (144.07243pt too wide) in paragraph at lines 197--206
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 230.
+
+Overfull \hbox (144.07243pt too wide) in paragraph at lines 245--254
 \T1/cmr/m/n/10 (-----!-----) Granger causal-ity https://www.ncbi.nlm.nih.gov/pm
 c/articles/PMC5082311/
  []
 
-<./images/graphe.png, id=46, 945.5325pt x 776.9025pt>
+[6] <./images/graphe.png, id=53, 945.5325pt x 776.9025pt>
 File: ./images/graphe.png Graphic file (type png)
 
 <use ./images/graphe.png>
-Package pdftex.def Info: ./images/graphe.png used on input line 223.
+Package pdftex.def Info: ./images/graphe.png used on input line 290.
 (pdftex.def)             Requested size: 425.4857pt x 349.60289pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 232--235
+ [7 <./images/graphe.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 299--302
 []\T1/cmr/m/n/10 https://doi.org/10.1371/journal.pone.0200091
  []
 
 
-Overfull \hbox (22.81038pt too wide) in paragraph at lines 232--235
+Overfull \hbox (22.81038pt too wide) in paragraph at lines 299--302
 \T1/cmr/m/n/10 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3719213/
  []
 
-[7 <./images/graphe.png>] (./WP.aux) ) 
+[8] (./WP.aux) ) 
 Here is how much of TeX's memory you used:
- 3610 strings out of 494910
- 45945 string characters out of 6179837
- 132311 words of memory out of 5000000
- 6829 multiletter control sequences out of 15000+600000
- 13819 words of font info for 37 fonts, out of 8000000 for 9000
+ 5509 strings out of 494910
+ 70558 string characters out of 6179837
+ 210849 words of memory out of 5000000
+ 8696 multiletter control sequences out of 15000+600000
+ 18449 words of font info for 51 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 38i,6n,24p,1017b,244s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/baptiste/.texmf-var/fonts/pk/ljfo
-ur/jknappen/ec/ecbx1000.600pk> </home/baptiste/.texmf-var/fonts/pk/ljfour/jknap
-pen/ec/ecbx1200.600pk> </home/baptiste/.texmf-var/fonts/pk/ljfour/jknappen/ec/e
-crm1000.600pk> </home/baptiste/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.
-600pk> </home/baptiste/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0900.600pk> <
-/home/baptiste/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0900.600pk> </home/ba
-ptiste/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1440.600pk> </home/baptiste/.
-texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2488.600pk></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on WP.pdf (7 pages, 513989 bytes).
+ 38i,7n,42p,1017b,1482s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/baptiste/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm080
+0.600pk> </home/baptiste/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0500.600pk>
+ </home/baptiste/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk> </home/
+baptiste/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/baptiste
+/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/baptiste/.texmf-
+var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/baptiste/.texmf-var/font
+s/pk/ljfour/jknappen/ec/ecrm0900.600pk> </home/baptiste/.texmf-var/fonts/pk/ljf
+our/jknappen/ec/ecbx0900.600pk> </home/baptiste/.texmf-var/fonts/pk/ljfour/jkna
+ppen/ec/ecrm1440.600pk> </home/baptiste/.texmf-var/fonts/pk/ljfour/jknappen/ec/
+ecrm2488.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+ex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/symbols/msbm10.pfb>
+Output written on WP.pdf (8 pages, 539859 bytes).
 PDF statistics:
- 333 PDF objects out of 1000 (max. 8388607)
- 81 compressed objects within 1 object stream
+ 409 PDF objects out of 1000 (max. 8388607)
+ 94 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
