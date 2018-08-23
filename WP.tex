@@ -105,7 +105,7 @@ The model for the application we chose is a tree of dependencies. The applicatio
 \vspace{0.8cm}
 
 \begin{multicols}{2}
-We also define an image as the state of the whole application i.e. the state of all of its components (hosts and services) at a point in time. This is represented as an array where there are 4 rows, one for each state (0-3) and as many column as hosts and services. The state of an host or a service is given by a boolean in the array (true in the row that is the corresponding state and false everywhere else) illustrated on Figure~\ref{image}
+We also define an image as the state of the whole application i.e. the state of all of its components (hosts and services) at a point in time. This is represented as an array where there are 4 rows, one for each state (0-3) and as many column as hosts and services. The state of an host or a service is given by a boolean in the array (true in the row that is the corresponding state and false everywhere else) illustrated on Figure~\ref{tab}
 
 \end{multicols}
 
@@ -115,7 +115,7 @@ We also define an image as the state of the whole application i.e. the state of 
 \centering
 \includegraphics[scale=0.5]{./images/image.png}
 \caption{General image}
-\label{image}
+\label{tab}
 \end{figure}
 
 \vspace{0.8cm}
@@ -223,8 +223,7 @@ We extend here our scope of possibility to all the types of data because we need
 \subsubsection{Signal Processing}
 The signal we get from the historical data is full of small variation that may be due to measure errors or changes that are periodical parasite which are irrelevant to treat. Therefore we will try to eliminate as much noise as possible to get a better accuracy in the computation of the influence. Indeed we are going to use a correlation between signals to guess the influence of a variable over another so we have to take into account only the significant event.Furthermore we have to find a proper way of evaluating the influence a node has over another.
 \\
-In order to reduce the noise in our signal we'll use some wavelets theory. The choosen method is described in described in detail in (http://cdn.intechopen.com/pdfs/34959/intech-utilising(underscore)the(underscore)wavelet(underscore)transform(underscore)in(underscore)condition(underscore)based(underscore)maintenance(underscore)a(underscore)review(underscore)with(underscore)applications.pdf)
-Basically we transform the data in wavelet domain with DTCWT - which can be done with the dtcwt library in python for instance -----(détails ?!?!?!?!)----- - we then do the processing, it consists in shrinking the noisy coefficient and finally we recover the de-noised signal by doing the inverse transformation.
+In order to reduce the noise in our signal we'll use some wavelets theory. The choosen method is described in described in detail in \cite{ref1} Basically we transform the data in wavelet domain with DTCWT - which can be done with the dtcwt library in python for instance (see example code from the documentation below) - we then do the processing, it consists in shrinking the noisy coefficient and finally we recover the de-noised signal by doing the inverse transformation.
 \end{multicols}
 \begin{lstlisting}[language=Python, caption=Python dtcwt library example]
 from matplotlib.pylab import *
@@ -240,19 +239,27 @@ vecs_recon = transform.inverse(vecs_t)
 \end{lstlisting}
 
 \begin{multicols}{2}
-The transformation is a decomposition of the function into a sum of some coefficient multiplied by each vector of a family of wavelets who have specific properties (the theory is explained in detail in the paper). in this work we'll use the Daubechies' wavelets (db11) (ref : Wavelet Analysis: Mother Wavelet Selection Methods)
+The transformation is a decomposition of the function into a sum of some coefficient multiplied by each vector of a family of wavelets who have specific properties (the theory is explained in detail in the paper). in this work we'll use the Daubechies' wavelets (db11) which was chosen using \cite{ref2}
 \subsubsection{Influence evaluation}
 In this part it is necessary to remember that what we are doing is done before the execution of the application during a learning phase, therefore we don't have any constraints in time and the algorithm can be slow.
 \\
-Our goal is to implement a way to evaluate the influence of each host and service on each other, we can visualize this idea as a graph where the nodes are the hosts and services and the edges are oriented. The edge $(s_i,s_j)$ is linked to the value of the influence $s_j$ has over $s_i$.
-\\
-(-----!-----)
-Granger causality https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5082311/ et Liang-Kleeman information flow 1403.6496 font l'hypothèse d'une correspondance linéaire (peut être ça suffit)
-Sinon on peut essayer de trouver un modèle non linéaire avec de l'apprentissage et essayer de déterminer l'influence en regardant les taux de variations respectifs...
-(-----!-----)
-The influence is assumed to be in our case the information flow between $s_i$ and $s_j$ so using the Liang-Kleeman information flow -----(ref!!!!)----- on some data we have, we can compute the value of the edges of the graph.
+Our goal is to implement a way to evaluate the influence of each host and service on each other, we can visualize this idea as a graph where the nodes are the hosts and services and the edges are oriented. The edge $(s_i,s_j)$ is linked to the value of the influence $s_j$ has over $s_i$. As on Figure~\ref{graph}
+\end{multicols}
+
+
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=0.45]{./images/graphe.png}
+\caption{Graph example}
+\label{graph}
+\end{figure}
+
+
+
+\begin{multicols}{2}
+The influence is assumed to be in our case the information flow between $s_i$ and $s_j$ so using the Liang-Kleeman information flow \cite{ref3} on some data we have, we can compute the value of the edges of the graph.
 \subsubsection{Targeting influential hosts}
-We now want to sort the nodes by the influence they have in the graph, we'll use the principle of the $page~rank$ algorithm on the graph where the probability to follow an edge is given by it's value of influence. this is however slightly different than the classical PageRank algorithm because edges have weights. Intuitively it can be seen as a random walk throughout the graph with the probability to follow an edge proportionnal to its weight. To compute it however, we'll  use the power method witch is a simple and fast way to compute it. Letting $M$ the matrix of transition between the nodes, we obtain it by normalizing the scores of the edges coming out of a node and using them as probability. We compute the rank vector $X$ by starting with an arbitrary $X_0$ and then using :
+We now want to sort the nodes by the influence they have in the graph, we'll use the principle of the $page~rank$ algorithm \cite{ref4} on the graph where the probability to follow an edge is given by it's value of influence. this is however slightly different than the classical PageRank algorithm because edges have weights. Intuitively it can be seen as a random walk throughout the graph with the probability to follow an edge proportionnal to its weight. To compute it however, we'll  use the power method witch is a simple and fast way to compute it. Letting $M$ the matrix of transition between the nodes, we obtain it by normalizing the scores of the edges coming out of a node and using them as probability. We compute the rank vector $X$ by starting with an arbitrary $X_0$ and then using :
 	\[X_{t+1} = (dM + \frac{1-d}{N}J_N)X_t\]
 until we reach :
 	\[ \mid{X_t+1 - X_t}\mid < \epsilon\]
@@ -275,28 +282,13 @@ def pagerank(M, eps, d=0.85):
     return X
 
 \end{lstlisting}
-
+\begin{multicols}{2}
 \subsubsection{Conclusion}
 Using these different techniques we manage to get a subset of all the hosts and services which are the one with most influence on the whole application. We can focus our learning on these particular variables. Which means that we'll have to deal with architectural changes of the application less often, beside it should also lighten the computations during the training phase. However we'll try to get some more information by grouping the other variables together insuring the flexibility of the application and light computations.\\
 \subsection{Grouping features}
 
------http://ilpubs.stanford.edu:8090/422/1/1999-66.pdf ------ 
 
 
-
-
-\vspace{0.8cm}
-
-\begin{figure}[!h]
-\centering
-\includegraphics[scale=0.45]{./images/graphe.png}
-\caption{Graph example}
-\label{graph}
-\end{figure}
-
-\vspace{0.8cm}
-
-\begin{multicols}{2}
 
 https://doi.org/10.1371/journal.pone.0200091
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3719213/
@@ -307,5 +299,12 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3719213/
 http://www.kyu.edu.tw/93/95paper/v8/95-068.pdf
 -Clustering
 -(1806.10474)
+
+
+\bibliographystyle{plain} 
+\bibliography{biblio}
+
+
+
 \end{document}
 
