@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.8.8)  23 AUG 2018 19:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.8.8)  27 AUG 2018 15:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -566,11 +566,7 @@ Package: amsthm 2015/03/04 v2.20.2
 \thm@postskip=\skip49
 \thm@headsep=\skip50
 \dth@everypar=\toks31
-) (./WP.aux
-
-LaTeX Warning: Label `graph' multiply defined.
-
-)
+) (./WP.aux)
 \openout1 = `WP.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
@@ -586,7 +582,8 @@ LaTeX Font Info:    ... okay on input line 49.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
 LaTeX Font Info:    ... okay on input line 49.
 \c@lstlisting=\count120
- (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count121
 \scratchdimen=\dimen135
@@ -766,49 +763,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 287--288
 
  []
 
-
-Overfull \hbox (225.37202pt too wide) in paragraph at lines 293--296
-\T1/cmr/m/n/10 https://doi.org/10.1371/journal.pone.0200091 https://www.ncbi.nl
-m.nih.gov/pmc/articles/PMC3719213/
- []
-
-[7 <./images/graphe.png>] (./WP.bbl) [8] (./WP.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+[7 <./images/graphe.png>] (./WP.bbl) [8] (./WP.aux) ) 
 Here is how much of TeX's memory you used:
- 5518 strings out of 494910
- 70620 string characters out of 6179837
- 262664 words of memory out of 5000000
- 8701 multiletter control sequences out of 15000+600000
+ 5519 strings out of 494910
+ 70626 string characters out of 6179837
+ 262669 words of memory out of 5000000
+ 8702 multiletter control sequences out of 15000+600000
  19135 words of font info for 52 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  38i,7n,42p,1017b,1482s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/baptiste/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1000.600pk> </hom
-e/baptiste/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </home/baptis
-te/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0500.600pk> </home/baptiste/.texm
-f-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk> </home/baptiste/.texmf-var/fo
-nts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/baptiste/.texmf-var/fonts/pk/l
-jfour/jknappen/ec/ecrm1000.600pk> </home/baptiste/.texmf-var/fonts/pk/ljfour/jk
-nappen/ec/ecbx1440.600pk> </home/baptiste/.texmf-var/fonts/pk/ljfour/jknappen/e
-c/ecrm0900.600pk> </home/baptiste/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx09
-00.600pk> </home/baptiste/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1440.600pk
-> </home/baptiste/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2488.600pk></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.
-pfb>
-Output written on WP.pdf (8 pages, 550193 bytes).
+ </home/baptiste/.texmf-va
+r/fonts/pk/ljfour/jknappen/ec/ecti1000.600pk> </home/baptiste/.texmf-var/fonts/
+pk/ljfour/jknappen/ec/ecrm0800.600pk> </home/baptiste/.texmf-var/fonts/pk/ljfou
+r/jknappen/ec/ecrm0500.600pk> </home/baptiste/.texmf-var/fonts/pk/ljfour/jknapp
+en/ec/ecbx1000.600pk> </home/baptiste/.texmf-var/fonts/pk/ljfour/jknappen/ec/ec
+bx1200.600pk> </home/baptiste/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.6
+00pk> </home/baptiste/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </
+home/baptiste/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0900.600pk> </home/bap
+tiste/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0900.600pk> </home/baptiste/.t
+exmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1440.600pk> </home/baptiste/.texmf-var
+/fonts/pk/ljfour/jknappen/ec/ecrm2488.600pk></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on WP.pdf (8 pages, 551769 bytes).
 PDF statistics:
- 445 PDF objects out of 1000 (max. 8388607)
+ 448 PDF objects out of 1000 (max. 8388607)
  98 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
