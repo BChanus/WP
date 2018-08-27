@@ -2,7 +2,7 @@
 
 \usepackage{listings}
 \usepackage{color}
- 
+
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
@@ -28,8 +28,6 @@
 }
  
 \lstset{style=mystyle}
-
-
 
 
 \usepackage[utf8]{inputenc}
@@ -71,21 +69,10 @@ Failure prediction
 \section{Introduction}
 Contrated applications runs within a maximum amount of time of unavailability per day. Thus when an incident occurs a race against time begins. The issue has to be diagnosed and fixed as fast as possible because this time is taken on the whole unavailability time. This amount is one of the most important key performance indicator (KPI) of an service leval aggreement (SLA) contracted by indrustry class IT services. We try to find a solution that could help anticipating these problems so the resolution time is the shorter possible.
 \\
-When in 2017 we tried to find a solution to the problem we decided to use the log files of Nagios based monitoring system we had access to. Our thougth was that we could establish a learning process using only the nagios disponibility data (which is described in the first part) to predict any failure of the application. The whole solution is explained in details throughout the first part but is build upon the assumption that the changes in the structure of the application are scarce which was a coherent assumption by this time.
-\\ However technologies have evolved and applications may have small changes in their structure on a regular basis which make any form of learning pretty difficult since the training is made with a specific structure of the application. This is why in a second part we'll focus on how to target specific hosts, those with the most influence on the application's state, so we can apply our previous learning method on a subset of all the hosts in the application that won't change too much. Finally we'll also try to regroup some of the hosts together in such a way that some may be added or remove only the group while be taken into account and the learning won't be affected by the structure changes.
+When in 2017 we tried to find a solution to the problem we decided to use the log files of Nagios based monitoring system we had access to. Our thougth was that we could establish a learning process using only the nagios disponibility data (which is described in the first part) to predict any failure of the application. The whole initial solution is explained in details throughout the first part but is build upon the assumption that the changes in the structure of the application are scarce which was a coherent assumption by this time.
+\\ However technologies have evolved and applications may have small changes in their structure on a regular basis which make any form of learning pretty difficult since the training is made with a specific structure of the application. This change in architecture are typically those expected with new kind of infrastructure like, as an example, the orchestrated containerized applications. This is why in a second part we'll focus on how to target specific hosts, those with the most influence on the application's state, so we can apply our previous learning method on a subset of all the hosts in the application that won't change too much. Finally we'll also try to regroup some of the hosts together in such a way that some may be added or remove only the group while be taken into account and the learning won't be affected by the structure changes.
 \end{multicols}
-\begin{comment}
-\vspace{0.8cm}
 
-\begin{figure}[!h]
-\centering
-\includegraphics[scale=1]{./images/Apprentissage_V2.png}
-\caption{Plan}
-\label{plan}
-\end{figure}
-
-\vspace{0.8cm}
-\end{comment}
 \begin{multicols}{2}
 \section{Availability based method}
 This first method uses nagios disponibility data, which means we have access, for each host and service of the application, only to the disponibility score between 0 and 3 (0: OK, 1: Warning, 2: Critical, 3: Unknown) and not to the exact value of each parameter. We are going to use historical data from old logs to train an algorithm of machine learning combining two learning techniques which are neural networs and the principle of genetic algorithms that we'll then use on the live data to predict the outage of the application that will eventually occur. However as explain in the introduction this method has serious rigidity issues as the training is made on a specific application's structure we'll discuss this limit as a conclusion to this method.
