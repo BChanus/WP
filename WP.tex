@@ -82,9 +82,9 @@ The model for the application we chose is a tree of dependencies. The applicatio
 
 \vspace{0.8cm}
 
-\begin{figure}[!h]
+\begin{figure}
 \centering
-\includegraphics[scale=0.35]{./images/arbrerelations.png}
+\includegraphics[scale=0.5]{./images/PNG/abrerelation.png}
 \caption{Tree example}
 \label{exampletree}
 \end{figure}
@@ -128,9 +128,9 @@ The first learning of the algorithm is via neural networks. We are going to trai
 
 \vspace{0.8cm}
 
-\begin{figure}[!h]
+\begin{figure}[!ht]
 \centering
-\includegraphics[scale=0.35]{./images/reseau.png}
+\includegraphics[scale=0.50]{./images/PNG/reseau.png}
 \caption{Network structure}
 \label{reseau}
 \end{figure}
@@ -189,7 +189,7 @@ At the beginning we create a population of multiple neural networks that we trai
 
 \begin{figure}[!h]
 \centering
-\includegraphics[scale=0.35]{./images/population.png}
+\includegraphics[scale=0.7]{./images/PNG/Population.png}
 \caption{A population of network}
 \label{pop}
 \end{figure}
@@ -205,7 +205,22 @@ This method can be pretty efficient because we can also collect data from past r
 \\ Still this indicates a path to follow. We should find a way to identify which variables of the application are the most impactful. This is an interesting question because identifying these variable would not only permit to restrain the number of data used to feed the neural network, making possible to add new ones without directly breaking the whole training because if the newly introduced variable is important the training could be done later without preventing the comparison. Also this would be a relevant information to help the diagnosis of an application. This is why the following part will focus on the identification of these variables. With this in mind analazing raw data will be more relevant hence we wont use the nagios data but directly values obtained from sensors. Therefore some new method of learning will eventually be explored.
 
 \section{Raw data enhancements}
-We extend here our scope of possibility to all the types of data because we need to solve the rigidity problem of the previous method. First we'll try to find a way of selecting the most influential hosts in the application i.e. the hosts for whom a variation of behavior has an important impact on the whole application. We'll then find a way to organize hosts into groups with common behaviors so that we can analyze the mean of the total group and then we'll be able to add and remove hosts from these group without losing the learning, it's also allowing more data to be used during the training of the algorithm.(rajouter le modèle des applications ici ?)
+We extend here our scope of possibility to all the types of data because we need to solve the rigidity problem of the previous method. First we'll try to find a way of selecting the most influential hosts in the application i.e. the hosts for whom a variation of behavior has an important impact on the whole application. We'll then find a way to organize hosts into groups with common behaviors so that we can analyze the mean of the total group and then we'll be able to add and remove hosts from these group without losing the learning, it's also allowing more data to be used during the training of the algorithm.
+\end{multicols}
+
+\vspace{0.8cm}
+
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=0.8]{./images/Apprentissage_V2.png}
+\caption{Training phasing}
+\label{pop}
+\end{figure}
+
+\vspace{0.8cm}
+
+\begin{multicols}{2}
+
 \subsection{Feature selection}
 \subsubsection{Signal Processing}
 The signal we get from the historical data is full of small variation that may be due to measure errors or changes that are periodical parasite which are irrelevant to treat. Therefore we will try to eliminate as much noise as possible to get a better accuracy in the computation of the influence. Indeed we are going to use a correlation between signals to guess the influence of a variable over another so we have to take into account only the significant event.Furthermore we have to find a proper way of evaluating the influence a node has over another.
@@ -236,7 +251,7 @@ Our goal is to implement a way to evaluate the influence of each host and servic
 
 \begin{figure}[!h]
 \centering
-\includegraphics[scale=0.45]{./images/graphe.png}
+\includegraphics[scale=0.6]{./images/PNG/Graphe.png}
 \caption{Graph example}
 \label{graph}
 \end{figure}
