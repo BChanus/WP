@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6745 64-bit) (preloaded format=pdflatex 2018.8.16)  28 AUG 2018 22:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6745 64-bit) (preloaded format=pdflatex 2018.8.16)  29 AUG 2018 05:50
 entering extended mode
 **C:/Users/michael.aubertin/Documents/MyGitRepos/WP/WP.tex
 (C:/Users/michael.aubertin/Documents/MyGitRepos/WP/WP.tex
@@ -447,23 +447,17 @@ Package pdftex.def Info: ./images/PNG/reseau.png  used on input line 133.
 File: ./images/fitness.png Graphic file (type png)
 <use ./images/fitness.png>
 Package pdftex.def Info: ./images/fitness.png  used on input line 176.
-(pdftex.def)             Requested size: 449.67694pt x 281.04808pt.
-
-Overfull \vbox (9.72717pt too high) has occurred while \output is active []
-
-
-[4 <./images/fitness.png>]
-<./images/PNG/Population.png, id=40, 834.97661pt x 602.03491pt>
+(pdftex.def)             Requested size: 321.19922pt x 200.7495pt.
+<./images/PNG/Population.png, id=34, 834.97661pt x 602.03491pt>
 File: ./images/PNG/Population.png Graphic file (type png)
 <use ./images/PNG/Population.png>
 Package pdftex.def Info: ./images/PNG/Population.png  used on input line 192.
-(pdftex.def)             Requested size: 584.47964pt x 421.42155pt.
+(pdftex.def)             Requested size: 417.48727pt x 301.01671pt.
 
-Overfull \hbox (100.78278pt too wide) in paragraph at lines 192--193
- [][] 
- []
 
-[5 <./images/PNG/Population.png>]
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[4 <./images/fitness.png>] [5 <./images/PNG/Population.png>]
 <./images/Apprentissage_V2.png, id=45, 501.31595pt x 357.69077pt>
 File: ./images/Apprentissage_V2.png Graphic file (type png)
 <use ./images/Apprentissage_V2.png>
@@ -488,15 +482,17 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 231.
- [6 <./images/Apprentissage_V2.png>]
 
-LaTeX Warning: Citation `ref2' on page 7 undefined on input line 244.
 
+LaTeX Warning: Citation `ref2' on page 6 undefined on input line 244.
+
+[6 <./images/Apprentissage_V2.png>]
 <./images/PNG/Graphe.png, id=54, 658.76884pt x 451.6875pt>
 File: ./images/PNG/Graphe.png Graphic file (type png)
 <use ./images/PNG/Graphe.png>
 Package pdftex.def Info: ./images/PNG/Graphe.png  used on input line 254.
 (pdftex.def)             Requested size: 395.26434pt x 271.01459pt.
+
 
 LaTeX Warning: Citation `ref3' on page 7 undefined on input line 262.
 
@@ -526,11 +522,11 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  5179 strings out of 492973
  71442 string characters out of 3121819
- 269349 words of memory out of 3000000
+ 218366 words of memory out of 3000000
  8948 multiletter control sequences out of 15000+200000
  18449 words of font info for 51 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,7n,42p,1067b,1808s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,7n,42p,1067b,1480s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\michael.aubertin\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen
 \ec\dpi600\ecrm0800.pk> <C:\Users\michael.aubertin\AppData\Local\MiKTeX\2.9\fon
 ts\pk\ljfour\jknappen\ec\dpi600\ecrm0500.pk> <C:\Users\michael.aubertin\AppData
@@ -559,7 +555,7 @@ blic/amsfonts/cm/cmsy7.pfb><C:/Users/michael.aubertin/AppData/Local/Programs/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/michael.aubertin/Ap
 pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
 
-Output written on WP.pdf (8 pages, 884450 bytes).
+Output written on WP.pdf (8 pages, 884283 bytes).
 PDF statistics:
  404 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
