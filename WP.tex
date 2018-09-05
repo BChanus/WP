@@ -42,7 +42,7 @@
 \usepackage{amsthm}
 \author{Baptiste Chanus}
 
-\title{White Paper}
+\title{Anticipating applications failures in containerized, micro-service and cloud architectures using AI}
 
 \begin{document}
 
@@ -53,9 +53,16 @@ White Paper
 \vspace{0.8cm}
 
 \begin{Large}
-Failure prediction
+Anticipating applications failures in containerized, micro-service and cloud architectures using AI
 \end{Large}
 \end{center}
+
+\vspace{0.8cm}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{./images/PNG/scc-logo.png}
+\end{figure}
 
 \vspace{0.8cm}
 
@@ -205,6 +212,30 @@ This method can be pretty efficient because we can also collect data from past r
 \\ Still this indicates a path to follow. We should find a way to identify which variables of the application are the most impactful. This is an interesting question because identifying these variable would not only permit to restrain the number of data used to feed the neural network, making possible to add new ones without directly breaking the whole training because if the newly introduced variable is important the training could be done later without preventing the comparison. Also this would be a relevant information to help the diagnosis of an application. This is why the following part will focus on the identification of these variables. With this in mind analazing raw data will be more relevant hence we wont use the nagios data but directly values obtained from sensors. Therefore some new method of learning will eventually be explored.
 
 \section{Raw data enhancements}
+We need more adaptability because before applications weren't changing their achitecture often, they were designed following the Figure~\ref{omodl} schema, this model however didn't permit a lot of optimisations therefore now, to adapt to the demand, application are based on a more horizontal or distributed model as illustrated on Figure~\ref{nmodl}. this cause the architecture of the application to change more often which is the problem will treat in this part.
+\end{multicols}
+
+\vspace{0.8cm}
+
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=0.65]{./images/PNG/app.png}
+\caption{Old model}
+\label{omodl}
+\end{figure}
+
+\vspace{0.8cm}
+
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=0.59]{./images/PNG/app2.png}
+\caption{New model}
+\label{nmodl}
+\end{figure}
+
+\vspace{0.8cm}
+
+\begin{multicols}{2}
 We extend here our scope of possibility to all the types of data because we need to solve the rigidity problem of the previous method. First we'll try to find a way of selecting the most influential hosts in the application i.e. the hosts for whom a variation of behavior has an important impact on the whole application. We'll then find a way to organize hosts into groups with common behaviors so that we can analyze the mean of the total group and then we'll be able to add and remove hosts from these group without losing the learning, it's also allowing more data to be used during the training of the algorithm.
 \end{multicols}
 
@@ -241,7 +272,20 @@ vecs_recon = transform.inverse(vecs_t)
 \end{lstlisting}
 
 \begin{multicols}{2}
-The transformation is a decomposition of the function into a sum of some coefficient multiplied by each vector of a family of wavelets who have specific properties (the theory is explained in detail in the paper). in this work we'll use the Daubechies' wavelets (db11) which was chosen using \cite{ref2}
+The transformation is a decomposition of the function into a sum of some coefficient multiplied by each vector of a family of wavelets who have specific properties (the theory is explained in detail in the paper). in this work we'll use the Daubechies' wavelets (db11 Figure~\ref{db}) which was chosen using \cite{ref2}
+\end{multicols}
+
+
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=0.67]{./images/PNG/db11.png}
+\caption{Wavelet and scaling function}
+\label{db}
+\end{figure}
+
+
+
+\begin{multicols}{2}
 \subsubsection{Influence evaluation}
 In this part it is necessary to remember that what we are doing is done before the execution of the application during a learning phase, therefore we don't have any constraints in time and the algorithm can be slow.
 \\
@@ -320,7 +364,10 @@ We'll use the nearest neighbors process clustering described in this article \ci
 \bibliographystyle{plain} 
 \bibliography{biblio}
 
+\vspace{0.8cm}
 
+By Aubertin Michael and Chanus Baptiste\\
+Coordinator Aubertin Michael : maubertin@fr.scc.com
 
 \end{document}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.8.8)  2 SEP 2018 17:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.8.8)  5 SEP 2018 16:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -677,115 +677,150 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<./images/PNG/abrerelation.png, id=1, 649.04019pt x 441.95885pt>
+<./images/PNG/scc-logo.png, id=1, 558.00778pt x 127.8623pt>
+File: ./images/PNG/scc-logo.png Graphic file (type png)
+
+<use ./images/PNG/scc-logo.png>
+Package pdftex.def Info: ./images/PNG/scc-logo.png used on input line 64.
+(pdftex.def)             Requested size: 279.0032pt x 63.93098pt.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/PNG/scc-logo.png>
+]
+<./images/PNG/abrerelation.png, id=15, 649.04019pt x 441.95885pt>
 File: ./images/PNG/abrerelation.png Graphic file (type png)
 
 <use ./images/PNG/abrerelation.png>
-Package pdftex.def Info: ./images/PNG/abrerelation.png used on input line 87.
+Package pdftex.def Info: ./images/PNG/abrerelation.png used on input line 94.
 (pdftex.def)             Requested size: 324.5193pt x 220.97888pt.
- [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] <./images/image.png, id=15
-, 722.7pt x 301.125pt>
+<./images/image.png, id=16, 722.7pt x 301.125pt>
 File: ./images/image.png Graphic file (type png)
-
-<use ./images/image.png>
-Package pdftex.def Info: ./images/image.png used on input line 103.
+ <use ./images/image.png>
+Package pdftex.def Info: ./images/image.png used on input line 110.
 (pdftex.def)             Requested size: 361.3491pt x 150.56212pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 115.
+
+[2 <./images/PNG/abrerelation.png> <./images/image.png>]
+LaTeX Font Info:    Try loading font information for U+msa on input line 122.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 115.
+LaTeX Font Info:    Try loading font information for U+msb on input line 122.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [2 <./images/PNG/abrerelation.png> <./images/image.png>]
+)
 <./images/PNG/reseau.png, id=23, 819.98654pt x 569.12625pt>
 File: ./images/PNG/reseau.png Graphic file (type png)
 
 <use ./images/PNG/reseau.png>
-Package pdftex.def Info: ./images/PNG/reseau.png used on input line 133.
+Package pdftex.def Info: ./images/PNG/reseau.png used on input line 140.
 (pdftex.def)             Requested size: 409.99226pt x 284.56242pt.
  [3 <./images/PNG/reseau.png>]
-<./images/fitness.png, id=34, 642.4pt x 401.5pt>
+<./images/fitness.png, id=35, 642.4pt x 401.5pt>
 File: ./images/fitness.png Graphic file (type png)
  <use ./images/fitness.png>
-Package pdftex.def Info: ./images/fitness.png used on input line 176.
+Package pdftex.def Info: ./images/fitness.png used on input line 183.
 (pdftex.def)             Requested size: 321.19922pt x 200.7495pt.
 
-<./images/PNG/Population.png, id=35, 834.97661pt x 602.03491pt>
+[4 <./images/fitness.png>]
+<./images/PNG/Population.png, id=43, 834.97661pt x 602.03491pt>
 File: ./images/PNG/Population.png Graphic file (type png)
 
 <use ./images/PNG/Population.png>
-Package pdftex.def Info: ./images/PNG/Population.png used on input line 192.
+Package pdftex.def Info: ./images/PNG/Population.png used on input line 199.
 (pdftex.def)             Requested size: 417.48727pt x 301.01671pt.
+ [5 <./images/PNG/Population.png>]
+<./images/PNG/app.png, id=48, 578.16pt x 662.24336pt>
+File: ./images/PNG/app.png Graphic file (type png)
+
+<use ./images/PNG/app.png>
+Package pdftex.def Info: ./images/PNG/app.png used on input line 222.
+(pdftex.def)             Requested size: 375.79955pt x 430.45308pt.
+
+<./images/PNG/app2.png, id=49, 556.61798pt x 733.81847pt>
+File: ./images/PNG/app2.png Graphic file (type png)
+
+<use ./images/PNG/app2.png>
+Package pdftex.def Info: ./images/PNG/app2.png used on input line 231.
+(pdftex.def)             Requested size: 328.40176pt x 432.94914pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[4 <./images/fitness.png>] [5 <./images/PNG/Population.png>]
-<./images/Apprentissage_V2.png, id=46, 501.31595pt x 357.69077pt>
+[6 <./images/PNG/app.png>]
+<./images/Apprentissage_V2.png, id=54, 501.31595pt x 357.69077pt>
 File: ./images/Apprentissage_V2.png Graphic file (type png)
 
 <use ./images/Apprentissage_V2.png>
-Package pdftex.def Info: ./images/Apprentissage_V2.png used on input line 215.
+Package pdftex.def Info: ./images/Apprentissage_V2.png used on input line 246.
 (pdftex.def)             Requested size: 401.0533pt x 286.15298pt.
 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[7 <./images/PNG/app2.png>]
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 231.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 262.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 231.
- [6 <./images/Apprentissage_V2.png>] <./images/PNG/Graphe.png, id=55, 658.76884
-pt x 451.6875pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 262.
+
+<./images/PNG/db11.png, id=61, 562.1pt x 197.73875pt>
+File: ./images/PNG/db11.png Graphic file (type png)
+
+<use ./images/PNG/db11.png>
+Package pdftex.def Info: ./images/PNG/db11.png used on input line 281.
+(pdftex.def)             Requested size: 376.60504pt x 132.48427pt.
+ [8 <./images/Apprentissage_V2.png> <./images/PNG/db11.png>] <./images/PNG/Grap
+he.png, id=70, 658.76884pt x 451.6875pt>
 File: ./images/PNG/Graphe.png Graphic file (type png)
 
 <use ./images/PNG/Graphe.png>
-Package pdftex.def Info: ./images/PNG/Graphe.png used on input line 254.
+Package pdftex.def Info: ./images/PNG/Graphe.png used on input line 298.
 (pdftex.def)             Requested size: 395.26434pt x 271.01459pt.
- [7 <./images/PNG/Graphe.png>]
-<./images/PNG/GraphesRandomWalk.png, id=61, 658.76884pt x 524.6524pt>
+ [9 <./images/PNG/Graphe.png>]
+<./images/PNG/GraphesRandomWalk.png, id=75, 658.76884pt x 524.6524pt>
 File: ./images/PNG/GraphesRandomWalk.png Graphic file (type png)
 
 <use ./images/PNG/GraphesRandomWalk.png>
 Package pdftex.def Info: ./images/PNG/GraphesRandomWalk.png used on input line 
-294.
+338.
 (pdftex.def)             Requested size: 329.3836pt x 262.32556pt.
 
-<./images/PNG/GraphesRandomWalk2.png, id=62, 736.59808pt x 521.17789pt>
+<./images/PNG/GraphesRandomWalk2.png, id=76, 736.59808pt x 521.17789pt>
 File: ./images/PNG/GraphesRandomWalk2.png Graphic file (type png)
 
 <use ./images/PNG/GraphesRandomWalk2.png>
 Package pdftex.def Info: ./images/PNG/GraphesRandomWalk2.png used on input line
- 301.
+ 345.
 (pdftex.def)             Requested size: 368.29814pt x 260.5883pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 310--311
+ [10 <./images/PNG/GraphesRandomWalk.png> <./images/PNG/GraphesRandomWalk2.png>
+]
+Underfull \hbox (badness 10000) in paragraph at lines 354--355
 
  []
 
-[8 <./images/PNG/GraphesRandomWalk.png> <./images/PNG/GraphesRandomWalk2.png>]
-(./WP.bbl) [9] (./WP.aux)
+(./WP.bbl) [11] (./WP.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5537 strings out of 494910
- 71224 string characters out of 6179837
- 213246 words of memory out of 5000000
- 8716 multiletter control sequences out of 15000+600000
+ 5560 strings out of 494910
+ 71701 string characters out of 6179837
+ 195654 words of memory out of 5000000
+ 8735 multiletter control sequences out of 15000+600000
  19135 words of font info for 52 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 38i,7n,42p,1017b,1482s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,7n,42p,1017b,1683s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/baptiste/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1000.600pk> </hom
 e/baptiste/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </home/baptis
 te/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0500.600pk> </home/baptiste/.texm
@@ -807,10 +842,10 @@ onts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.
 pfb>
-Output written on WP.pdf (9 pages, 1108132 bytes).
+Output written on WP.pdf (11 pages, 1210179 bytes).
 PDF statistics:
- 452 PDF objects out of 1000 (max. 8388607)
- 100 compressed objects within 1 object stream
+ 477 PDF objects out of 1000 (max. 8388607)
+ 104 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
