@@ -47,9 +47,7 @@
 \begin{document}
 
 \begin{center}
-\begin{Huge}
-White Paper
-\end{Huge}
+
 \vspace{0.8cm}
 
 \begin{Large}
@@ -63,6 +61,12 @@ Anticipating applications failures in containerized, micro-service and cloud arc
 \centering
 \includegraphics[scale=0.5]{./images/PNG/scc-logo.png}
 \end{figure}
+
+\vspace{0.8cm}
+
+Author: Chanus Baptiste\\
+Coordinator: Aubertin Michael\\
+Contact: maubertin@fr.scc.com\\
 
 \vspace{0.8cm}
 
@@ -135,14 +139,7 @@ We are going to use supervised machine learning, therefore we need to label the 
 The first learning of the algorithm is via neural networks. We are going to train a neural network to guess how much time is remaining until the next outage. A network with a given structure is the set of its weights and biases which are the parameters we'll try to evolve during the learning process. They are going to be randomly initialized, this is why, before the training, our network can be summarize to its structure. So, we'll represent a network by two list of integers. One that will specify the input of the neural network and another for its hidden layers (we only need one output : the guess). The first list length is the total of inputs of the network and each integer in this list will be used as the $k$ in the distance formula thus each input will take a different value of a different comparison between the image and the reference. The second list length is the total number of hidden layer and the $i-th$ integer in the list is the amount of neurones in the layer $i$.
 \end{multicols}
 
-\vspace{0.8cm}
 
-\begin{figure}[!ht]
-\centering
-\includegraphics[scale=0.50]{./images/PNG/reseau.png}
-\caption{Network structure}
-\label{reseau}
-\end{figure}
 
 \vspace{0.8cm}
 
@@ -190,7 +187,6 @@ This function has only been chosen for its shape illustrated on Figure ~\ref{fon
 
 \vspace{0.8cm}
 
-
 \begin{multicols}{2}
 At the beginning we create a population of multiple neural networks that we train separatly from different starting parameters (structure, weights and biases). During the analysis we can use the computation of all these networks. Because they started their training from different configurations they propably didn't converge to the same minimum of the function, thus we increase the probability of getting close to a global minimum. 
 \\We use all the guesses from all of the networks in the population to get the amount of time we are trying to predict. Then after the application outage we apply the fitness function we introduced above to evaluate individualy the networks (Figure~\ref{pop}) and we generate the next generation using the ones with best results. To perform the selection we normalize all the score so that the total sum is $1$ and we randomly select some networks, the higher their score the higher the probability of being selected.
@@ -211,13 +207,10 @@ At the beginning we create a population of multiple neural networks that we trai
 In the process we also add little mutations to the hyperparameters so that we have less chance of getting stuck in a non-optimal configuration. This method also solved the problem of choosing the set of hyperparameters because they are evolving throughout the execution of the algortihm.
 With two given network another is created by generating an empty list we fill with elements of a list or the other with probability $\frac{1}{2}$. Then with a little probability called $mutation ~rate$ we introduce mutations which can be either a little variation of an integer in the lists or of the size of each list.
 
-
 \subsection{Conclusion and limits}
 This method can be pretty efficient because we can also collect data from past runs to determine the best structure to start the genetic principle with, which could be seen as another form of learning. However eventhough some part of it could be useful the full method is not feasible because it's unadapted to the new standard architectures of application. Indeed the whole process lies on the training of neural networks that was made using a specific architecture of the application and it shall not evolve during the execution of the algorithm for two big reasons. The first is that the learning would be, in the best case, far less efficient and the second problem is that the comparison is made coordinate by coordinate with an image calculated from historical data. Thus we couldn't compare new images with the old mean and the whole algorithm falls apart.
 
- 
 \\ \\This indicates a path to follow. We should find a way to identify which variables of the application are the most impactful. This is an interesting question because identifying these variable would not only making possible to restrain the number of data used to feed the neural network, but would allow to add new ones without directly breaking the whole training. Indeed, if the newly introduced variable is important the training could be done later without preventing the comparison. Furthermore, this would be a relevant information to help the diagnosis of an application. This is why the following part will focus on the identification of these variables. With this in mind analazing raw data will be more relevant hence we wont use the monitoring state data but directly values obtained from sensors. Therefore some new method of learning will eventually be explored.
-
 
 \section{Raw data enhancements}
 We need more adaptability because legacy applications weren't changing their achitecture often, they were designed following the Figure~\ref{omodl} schema. This model however didn't allow a lot of optimisations. Therefore now, to adapt to the demand, application are now based on a more horizontal or distributed model as illustrated on Figure~\ref{nmodl}. This cause the infrastructures of the application to change more often. This problem will be discussed in the following part.
@@ -234,13 +227,11 @@ We need more adaptability because legacy applications weren't changing their ach
 
 \begin{figure}[!ht]
 \centering
-\includegraphics[scale=0.40]{./images/PNG/app2.png}
-\caption{New model}
+\includegraphics[scale=0.60]{./images/PNG/micro_archi.png}
+\caption{Cloud and micro architecture}
 \label{nmodl}
 \end{figure}
 
-
-% Ok Mike
 
 \begin{multicols}{2}
 We extend here our scope of possibility to all the types of data because we need to solve the rigidity problem of the previous method. First we'll try to find a way of selecting the most influential hosts in the application i.e. the hosts for whom a variation of behavior has an important impact on the whole application. Then, we'll find a way to organize hosts into groups with common behaviors so that we can analyze the mean of the total group. Once done, we'll be able to add and remove hosts from these group without losing the learning. We expect it would also allowed more data to be used during the training of the algorithm.
@@ -267,7 +258,7 @@ The signal we get from the historical data is full of small variations that may 
 \vspace{0.8cm}
 
 \begin{multicols}{2}
-In order to reduce the noise in our signal we'll use some wavelets theory. The choosen method is described in detail in \cite{dtcwt}. Basically we transform the data in wavelet domain with DTCWT - which can be done with the dtcwt library in python for instance (see example code from the documentation below) - we then do the processing, it consists in shrinking the noisy coefficient and finally we recover the de-noised signal by doing the inverse transformation.
+In order to reduce the noise in our signal we'll use some wavelets theory. The choosen method is described in detail in \cite{dwtselect}. Basically we transform the data in wavelet domain with DTCWT - which can be done with the dtcwt library in python for instance (see example code from the documentation below) - we then do the processing, it consists in shrinking the noisy coefficient and finally we recover the de-noised signal by doing the inverse transformation.
 \end{multicols}
 \begin{lstlisting}[language=Python, caption=Python dtcwt library example]
 from matplotlib.pylab import *
@@ -286,7 +277,6 @@ vecs_recon = transform.inverse(vecs_t)
 \begin{multicols}{2}
 The transformation is a decomposition of the function into a sum of some coefficient multiplied by each vector of a family of wavelets who have specific properties (the theory is explained in detail in the paper). in this work we'll use the Daubechies' wavelets (db11 Figure~\ref{db}) which was chosen using \cite{dwtselect} and referenced papers.
 \end{multicols}
-
 
 \begin{figure}[!h]
 \centering
@@ -309,8 +299,6 @@ Our goal is to implement a way to evaluate the influence of each host and servic
 \caption{Graph example}
 \label{graphe}
 \end{figure}
-
-%Ok Mike
 
 \begin{multicols}{2}
 The influence is assumed to be in our case the information flow between $s_i$ and $s_j$ so using the Liang-Kleeman information flow \cite{infoflow} on some data we have, we can compute the value of the edges of the graph.
@@ -342,8 +330,6 @@ def pagerank(M, eps, d=0.85):
 
 \end{lstlisting}
 
-
-
 \begin{figure}[!h]
 \centering
 \includegraphics[scale=0.5]{./images/PNG/GraphesRandomWalk.png}
@@ -358,15 +344,12 @@ def pagerank(M, eps, d=0.85):
 \label{graphrw}
 \end{figure}
 
-
 \begin{multicols}{2}
 \subsubsection{Conclusion}
 Using these different techniques we manage to get a subset of all the hosts and services which are the one with most influence on the whole application. We can focus our learning on these particular variables. Which means that we'll have to deal with architectural changes of the application less often, beside it should also lighten the computations during the training phase. However we'll try to get some more information by grouping the other variables together insuring the flexibility of the application and light computations.\\
 \subsection{Grouping features}
 Finally when we selected our principal features we cluster all the others in order to be able to adapt to changes in the application architecture. We assumed that the variables that will be removed and added the most often also have limited impact on the global application.\\
-We'll use the nearest neighbors process clustering described in this article \cite{ref5} (which also expose a K mean algorithm but this one is said to be less effective with small amount of data, which may be the case in our situation) and then we'll use the method described in the first part on the selcted features and a mean of the ones in each cluster.
-
-
+We'll use the nearest neighbors process clustering described in this article \cite{NNCluster} (which also expose a K mean algorithm but this one is said to be less effective with small amount of data, which may be the case in our situation) and then we'll use the method described in the first part on the selcted features and a mean of the ones in each cluster.
 
 \end{multicols}
 
@@ -394,12 +377,13 @@ We'll use the nearest neighbors process clustering described in this article \ci
       \emph{The Anatomy of a Large-Scale Hypertextual Web Search Engine}.
         \\\texttt{http://infolab.stanford.edu/pub/papers/google.pdf}
 
-        
-\end{thebibliography}
+    \bibitem{NNCluster}
+      Sébastien Bubeck and Ulrike von Luxburg,
+      \emph{Nearest Neighbor Clustering: A Baseline Method for Consistent Clustering with Arbitrary Objective Functions}.
+        \\\texttt{http://www.jmlr.org/papers/volume10/bubeck09a/bubeck09a.pdf} 
 
-\vspace{0.8cm}
-Main author: Chanus Baptiste - Coordinator Aubertin Michael\\
-Contact: maubertin@fr.scc.com
+
+\end{thebibliography}
 
 \end{document}
 

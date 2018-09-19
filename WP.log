@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6745 64-bit) (preloaded format=pdflatex 2018.8.16)  18 SEP 2018 10:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6745 64-bit) (preloaded format=pdflatex 2018.8.16)  19 SEP 2018 11:39
 entering extended mode
 **C:/Users/michael.aubertin/Documents/MyGitRepos/WP/WP.tex
 (C:/Users/michael.aubertin/Documents/MyGitRepos/WP/WP.tex
@@ -411,53 +411,55 @@ G,.JBIG2,.JB2,.eps]
 <./images/PNG/scc-logo.png, id=1, 558.00778pt x 127.8623pt>
 File: ./images/PNG/scc-logo.png Graphic file (type png)
 <use ./images/PNG/scc-logo.png>
-Package pdftex.def Info: ./images/PNG/scc-logo.png  used on input line 64.
+Package pdftex.def Info: ./images/PNG/scc-logo.png  used on input line 62.
 (pdftex.def)             Requested size: 279.0032pt x 63.93098pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--70
+
+ []
+
 [1
 
 {C:/Users/michael.aubertin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <
 ./images/PNG/scc-logo.png>]
-<./images/PNG/abrerelation.png, id=14, 649.04019pt x 441.95885pt>
+<./images/PNG/abrerelation.png, id=13, 649.04019pt x 441.95885pt>
 File: ./images/PNG/abrerelation.png Graphic file (type png)
 <use ./images/PNG/abrerelation.png>
-Package pdftex.def Info: ./images/PNG/abrerelation.png  used on input line 95.
+Package pdftex.def Info: ./images/PNG/abrerelation.png  used on input line 99.
 (pdftex.def)             Requested size: 324.5193pt x 220.97888pt.
-<./images/image.png, id=15, 722.7pt x 301.125pt>
+<./images/image.png, id=14, 722.7pt x 301.125pt>
 File: ./images/image.png Graphic file (type png)
 <use ./images/image.png>
-Package pdftex.def Info: ./images/image.png  used on input line 111.
+Package pdftex.def Info: ./images/image.png  used on input line 115.
 (pdftex.def)             Requested size: 361.3491pt x 150.56212pt.
- [2 <./images/PNG/abrerelation.png> <./images/image.png>]
-LaTeX Font Info:    Try loading font information for U+msa on input line 124.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 128.
 
 ("C:\Users\michael.aubertin\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfont
 s\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 124.
+LaTeX Font Info:    Try loading font information for U+msb on input line 128.
 
 ("C:\Users\michael.aubertin\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfont
 s\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-<./images/PNG/reseau.png, id=22, 819.98654pt x 569.12625pt>
-File: ./images/PNG/reseau.png Graphic file (type png)
-<use ./images/PNG/reseau.png>
-Package pdftex.def Info: ./images/PNG/reseau.png  used on input line 142.
-(pdftex.def)             Requested size: 409.99226pt x 284.56242pt.
- [3 <./images/PNG/reseau.png>]
+) [2 <./images/PNG/abrerelation.png>] [3 <./images/image.png>]
 <./images/fitness.png, id=34, 642.4pt x 401.5pt>
 File: ./images/fitness.png Graphic file (type png)
 <use ./images/fitness.png>
-Package pdftex.def Info: ./images/fitness.png  used on input line 186.
+Package pdftex.def Info: ./images/fitness.png  used on input line 183.
 (pdftex.def)             Requested size: 321.19922pt x 200.7495pt.
- [4 <./images/fitness.png>]
-<./images/PNG/Population.png, id=42, 834.97661pt x 602.03491pt>
+<./images/PNG/Population.png, id=35, 834.97661pt x 602.03491pt>
 File: ./images/PNG/Population.png Graphic file (type png)
 <use ./images/PNG/Population.png>
-Package pdftex.def Info: ./images/PNG/Population.png  used on input line 203.
+Package pdftex.def Info: ./images/PNG/Population.png  used on input line 199.
 (pdftex.def)             Requested size: 417.48727pt x 301.01671pt.
 
+[4 <./images/fitness.png>]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -465,7 +467,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.219 \\ \\
+l.213 \\ \\
            This indicates a path to follow. We should find a way to identify...
 
 Your command was ignored.
@@ -479,42 +481,44 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.219 \\ \\T
+l.213 \\ \\T
             his indicates a path to follow. We should find a way to identify...
 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[5 <./images/PNG/Population.png>]
-<./images/PNG/Application_legacy.png, id=47, 605.83301pt x 415.5525pt>
+<./images/PNG/Application_legacy.png, id=40, 605.83301pt x 415.5525pt>
 File: ./images/PNG/Application_legacy.png Graphic file (type png)
 <use ./images/PNG/Application_legacy.png>
 Package pdftex.def Info: ./images/PNG/Application_legacy.png  used on input lin
-e 228.
+e 221.
 (pdftex.def)             Requested size: 242.3289pt x 166.21805pt.
-<./images/PNG/app2.png, id=48, 556.61798pt x 733.81847pt>
-File: ./images/PNG/app2.png Graphic file (type png)
-<use ./images/PNG/app2.png>
-Package pdftex.def Info: ./images/PNG/app2.png  used on input line 237.
-(pdftex.def)             Requested size: 222.64325pt x 293.52219pt.
- [6 <./images/PNG/Application_legacy.png> <./images/PNG/app2.png>]
-<./images/Apprentissage_V2.png, id=54, 501.31595pt x 357.69077pt>
+<./images/PNG/micro_archi.png, id=41, 613.97522pt x 457.60341pt>
+File: ./images/PNG/micro_archi.png Graphic file (type png)
+<use ./images/PNG/micro_archi.png>
+Package pdftex.def Info: ./images/PNG/micro_archi.png  used on input line 230.
+(pdftex.def)             Requested size: 368.38797pt x 274.56416pt.
+[5 <./images/PNG/Population.png>]
+<./images/Apprentissage_V2.png, id=46, 501.31595pt x 357.69077pt>
 File: ./images/Apprentissage_V2.png Graphic file (type png)
 <use ./images/Apprentissage_V2.png>
-Package pdftex.def Info: ./images/Apprentissage_V2.png  used on input line 262.
+Package pdftex.def Info: ./images/Apprentissage_V2.png  used on input line 253.
 
 (pdftex.def)             Requested size: 401.0533pt x 286.15298pt.
 
+Overfull \vbox (3.81636pt too high) has occurred while \output is active []
 
-LaTeX Warning: Citation `dtcwt' on page 7 undefined on input line 270.
+
+Overfull \vbox (13.87239pt too high) has occurred while \output is active []
 
 
+[6 <./images/PNG/Application_legacy.png> <./images/PNG/micro_archi.png>]
 ("C:\Users\michael.aubertin\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listing
 s\lstlang1.sty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 273.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 264.
 
 
 ("C:\Users\michael.aubertin\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\om
@@ -522,99 +526,84 @@ scmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 273.
- [7 <./images/Apprentissage_V2.png>]
-<./images/PNG/db11.png, id=64, 562.1pt x 197.73875pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 264.
+<./images/PNG/db11.png, id=53, 562.1pt x 197.73875pt>
 File: ./images/PNG/db11.png Graphic file (type png)
 <use ./images/PNG/db11.png>
-Package pdftex.def Info: ./images/PNG/db11.png  used on input line 293.
+Package pdftex.def Info: ./images/PNG/db11.png  used on input line 283.
 (pdftex.def)             Requested size: 376.60504pt x 132.48427pt.
-<./images/PNG/Graphe.png, id=65, 658.76884pt x 451.6875pt>
+ [7 <./images/Apprentissage_V2.png> <./images/PNG/db11.png>]
+<./images/PNG/Graphe.png, id=63, 658.76884pt x 451.6875pt>
 File: ./images/PNG/Graphe.png Graphic file (type png)
 <use ./images/PNG/Graphe.png>
-Package pdftex.def Info: ./images/PNG/Graphe.png  used on input line 308.
+Package pdftex.def Info: ./images/PNG/Graphe.png  used on input line 298.
 (pdftex.def)             Requested size: 395.26434pt x 271.01459pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[8 <./images/PNG/db11.png>]
-<./images/PNG/GraphesRandomWalk.png, id=70, 658.76884pt x 524.6524pt>
+ [8 <./images/PNG/Graphe.png>]
+<./images/PNG/GraphesRandomWalk.png, id=68, 658.76884pt x 524.6524pt>
 File: ./images/PNG/GraphesRandomWalk.png Graphic file (type png)
 <use ./images/PNG/GraphesRandomWalk.png>
 Package pdftex.def Info: ./images/PNG/GraphesRandomWalk.png  used on input line
- 349.
+ 335.
 (pdftex.def)             Requested size: 329.3836pt x 262.32556pt.
-<./images/PNG/GraphesRandomWalk2.png, id=71, 736.59808pt x 521.17789pt>
+<./images/PNG/GraphesRandomWalk2.png, id=69, 736.59808pt x 521.17789pt>
 File: ./images/PNG/GraphesRandomWalk2.png Graphic file (type png)
 <use ./images/PNG/GraphesRandomWalk2.png>
 Package pdftex.def Info: ./images/PNG/GraphesRandomWalk2.png  used on input lin
-e 356.
+e 342.
 (pdftex.def)             Requested size: 368.29814pt x 260.5883pt.
+ [9 <./images/PNG/GraphesRandomWalk.png> <./images/PNG/GraphesRandomWalk2.png>]
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[9 <./images/PNG/Graphe.png> <./images/PNG/GraphesRandomWalk.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 364--365
+Underfull \hbox (badness 10000) in paragraph at lines 349--350
 
  []
 
-
-LaTeX Warning: Citation `ref5' on page 10 undefined on input line 367.
-
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 380.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 363.
 
 
 ("C:\Users\michael.aubertin\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1
 cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-) [10 <./images/PNG/GraphesRandomWalk2.png>] (WP.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+) [10] (WP.aux) ) 
 Here is how much of TeX's memory you used:
- 5236 strings out of 492973
- 73023 string characters out of 3121819
- 207256 words of memory out of 3000000
- 8997 multiletter control sequences out of 15000+200000
- 19448 words of font info for 53 fonts, out of 3000000 for 9000
+ 5228 strings out of 492973
+ 72909 string characters out of 3121819
+ 200562 words of memory out of 3000000
+ 8991 multiletter control sequences out of 15000+200000
+ 18676 words of font info for 52 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,7n,42p,1065b,1808s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\michael.aubertin\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen
-\ec\dpi600\ectt1000.pk> <C:\Users\michael.aubertin\AppData\Local\MiKTeX\2.9\fon
-ts\pk\ljfour\jknappen\ec\dpi600\ecti1000.pk> <C:\Users\michael.aubertin\AppData
-\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk> <C:\Users\mic
-hael.aubertin\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0
-500.pk> <C:\Users\michael.aubertin\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkn
-appen\ec\dpi600\ecbx1000.pk> <C:\Users\michael.aubertin\AppData\Local\MiKTeX\2.
-9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\michael.aubertin\Ap
-pData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C:\User
-s\michael.aubertin\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
-ecbx1440.pk> <C:\Users\michael.aubertin\AppData\Local\MiKTeX\2.9\fonts\pk\ljfou
-r\jknappen\ec\dpi600\ecrm0900.pk> <C:\Users\michael.aubertin\AppData\Local\MiKT
-eX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx0900.pk> <C:\Users\michael.aubert
-in\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk> <C:
-\Users\michael.aubertin\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dp
-i600\ecrm2488.pk><C:/Users/michael.aubertin/AppData/Local/Programs/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/michael.aubertin/AppData/Loc
-al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/mich
-ael.aubertin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mmi12.pfb><C:/Users/michael.aubertin/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmmi7.pfb><C:/Users/michael.aubertin/AppData/Local/Progr
-ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/michael.auber
-tin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-<C:/Users/michael.aubertin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmr7.pfb><C:/Users/michael.aubertin/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/michael.aubertin/AppDat
-a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/
-michael.aubertin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmsy8.pfb><C:/Users/michael.aubertin/AppData/Local/Programs/MiKTeX 2.9/fonts
-/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on WP.pdf (10 pages, 1504921 bytes).
+ 41i,7n,42p,1065b,1681s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\michael.aubertin\AppData\Local\MiKTeX\2.9\fonts\pk\
+ljfour\jknappen\ec\dpi600\ectt1000.pk> <C:\Users\michael.aubertin\AppData\Local
+\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1000.pk> <C:\Users\michael.a
+ubertin\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk
+> <C:\Users\michael.aubertin\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
+ec\dpi600\ecrm0500.pk> <C:\Users\michael.aubertin\AppData\Local\MiKTeX\2.9\font
+s\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk> <C:\Users\michael.aubertin\AppData\
+Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\mich
+ael.aubertin\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx14
+40.pk> <C:\Users\michael.aubertin\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkna
+ppen\ec\dpi600\ecrm0900.pk> <C:\Users\michael.aubertin\AppData\Local\MiKTeX\2.9
+\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx0900.pk> <C:\Users\michael.aubertin\App
+Data\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C:\Users
+\michael.aubertin\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\e
+crm1440.pk><C:/Users/michael.aubertin/AppData/Local/Programs/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmex10.pfb><C:/Users/michael.aubertin/AppData/Local/Pro
+grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/michael.au
+bertin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.
+pfb><C:/Users/michael.aubertin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmmi7.pfb><C:/Users/michael.aubertin/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/michael.aubertin/Ap
+pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Us
+ers/michael.aubertin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmr7.pfb><C:/Users/michael.aubertin/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/michael.aubertin/AppData/Loca
+l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/michae
+l.aubertin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
+y8.pfb><C:/Users/michael.aubertin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/amsfonts/symbols/msbm10.pfb>
+Output written on WP.pdf (10 pages, 1641920 bytes).
 PDF statistics:
- 516 PDF objects out of 1000 (max. 8388607)
+ 508 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
