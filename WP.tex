@@ -210,7 +210,7 @@ With two given network another is created by generating an empty list we fill wi
 \subsection{Conclusion and limits}
 This method can be pretty efficient because we can also collect data from past runs to determine the best structure to start the genetic principle with, which could be seen as another form of learning. However eventhough some part of it could be useful the full method is not feasible because it's unadapted to the new standard architectures of application. Indeed the whole process lies on the training of neural networks that was made using a specific architecture of the application and it shall not evolve during the execution of the algorithm for two big reasons. The first is that the learning would be, in the best case, far less efficient and the second problem is that the comparison is made coordinate by coordinate with an image calculated from historical data. Thus we couldn't compare new images with the old mean and the whole algorithm falls apart.
 
-\\ \\This indicates a path to follow. We should find a way to identify which variables of the application are the most impactful. This is an interesting question because identifying these variable would not only making possible to restrain the number of data used to feed the neural network, but would allow to add new ones without directly breaking the whole training. Indeed, if the newly introduced variable is important the training could be done later without preventing the comparison. Furthermore, this would be a relevant information to help the diagnosis of an application. This is why the following part will focus on the identification of these variables. With this in mind analazing raw data will be more relevant hence we wont use the monitoring state data but directly values obtained from sensors. Therefore some new method of learning will eventually be explored.
+This indicates a path to follow. We should find a way to identify which variables of the application are the most impactful. This is an interesting question because identifying these variable would not only making possible to restrain the number of data used to feed the neural network, but would allow to add new ones without directly breaking the whole training. Indeed, if the newly introduced variable is important the training could be done later without preventing the comparison. Furthermore, this would be a relevant information to help the diagnosis of an application. This is why the following part will focus on the identification of these variables. With this in mind analazing raw data will be more relevant hence we wont use the monitoring state data but directly values obtained from sensors. Therefore some new method of learning will eventually be explored.
 
 \section{Raw data enhancements}
 We need more adaptability because legacy applications weren't changing their achitecture often, they were designed following the Figure~\ref{omodl} schema. This model however didn't allow a lot of optimisations. Therefore now, to adapt to the demand, application are now based on a more horizontal or distributed model as illustrated on Figure~\ref{nmodl}. This cause the infrastructures of the application to change more often. This problem will be discussed in the following part.
@@ -258,7 +258,7 @@ The signal we get from the historical data is full of small variations that may 
 \vspace{0.8cm}
 
 \begin{multicols}{2}
-In order to reduce the noise in our signal we'll use some wavelets theory. The choosen method is described in detail in \cite{dwtselect}. Basically we transform the data in wavelet domain with DTCWT - which can be done with the dtcwt library in python for instance (see example code from the documentation below) - we then do the processing, it consists in shrinking the noisy coefficient and finally we recover the de-noised signal by doing the inverse transformation.
+In order to reduce the noise in our signal we'll use some wavelets theory. The choosen method is described in detail in ~\cite{ref1}. Basically we transform the data in wavelet domain with DTCWT - which can be done with the dtcwt library in python for instance (see example code from the documentation below) - we then do the processing, it consists in shrinking the noisy coefficient and finally we recover the de-noised signal by doing the inverse transformation.
 \end{multicols}
 \begin{lstlisting}[language=Python, caption=Python dtcwt library example]
 from matplotlib.pylab import *
@@ -275,7 +275,7 @@ vecs_recon = transform.inverse(vecs_t)
 
 
 \begin{multicols}{2}
-The transformation is a decomposition of the function into a sum of some coefficient multiplied by each vector of a family of wavelets who have specific properties (the theory is explained in detail in the paper). in this work we'll use the Daubechies' wavelets (db11 Figure~\ref{db}) which was chosen using \cite{dwtselect} and referenced papers.
+The transformation is a decomposition of the function into a sum of some coefficient multiplied by each vector of a family of wavelets who have specific properties (the theory is explained in detail in the paper). in this work we'll use the Daubechies' wavelets (db11 Figure~\ref{db}) which was chosen using ~\cite{ref2} and referenced papers.
 \end{multicols}
 
 \begin{figure}[!h]
@@ -301,10 +301,10 @@ Our goal is to implement a way to evaluate the influence of each host and servic
 \end{figure}
 
 \begin{multicols}{2}
-The influence is assumed to be in our case the information flow between $s_i$ and $s_j$ so using the Liang-Kleeman information flow \cite{infoflow} on some data we have, we can compute the value of the edges of the graph.
+The influence is assumed to be in our case the information flow between $s_i$ and $s_j$ so using the Liang-Kleeman information flow ~\cite{ref3} on some data we have, we can compute the value of the edges of the graph.
 
 \subsubsection{Targeting influential hosts}
-We now want to sort the nodes by the influence they have in the graph, we'll use the principle of the $page~rank$ algorithm \cite{pagerank} on the graph where the probability to follow an edge is given by it's value of influence. this is however slightly different than the classical PageRank algorithm because edges have weights. Intuitively it can be seen as a random walk throughout the graph with the probability to follow an edge proportionnal to its weight.
+We now want to sort the nodes by the influence they have in the graph, we'll use the principle of the $page~rank$ algorithm ~\cite{ref4} on the graph where the probability to follow an edge is given by it's value of influence. this is however slightly different than the classical PageRank algorithm because edges have weights. Intuitively it can be seen as a random walk throughout the graph with the probability to follow an edge proportionnal to its weight.
 
 To compute it however, we'll  use the power method witch is a simple and fast way to compute it. Letting $M$ the matrix of transition between the nodes, we obtain it by normalizing the scores of the edges coming out of a node and using them as probability. We compute the rank vector $X$ by starting with an arbitrary $X_0$ and then using :
 	\[X_{t+1} = (dM + \frac{1-d}{N}J_N)X_t\]
@@ -349,41 +349,15 @@ def pagerank(M, eps, d=0.85):
 Using these different techniques we manage to get a subset of all the hosts and services which are the one with most influence on the whole application. We can focus our learning on these particular variables. Which means that we'll have to deal with architectural changes of the application less often, beside it should also lighten the computations during the training phase. However we'll try to get some more information by grouping the other variables together insuring the flexibility of the application and light computations.\\
 \subsection{Grouping features}
 Finally when we selected our principal features we cluster all the others in order to be able to adapt to changes in the application architecture. We assumed that the variables that will be removed and added the most often also have limited impact on the global application.\\
-We'll use the nearest neighbors process clustering described in this article \cite{NNCluster} (which also expose a K mean algorithm but this one is said to be less effective with small amount of data, which may be the case in our situation) and then we'll use the method described in the first part on the selcted features and a mean of the ones in each cluster.
+We'll use the nearest neighbors process clustering described in this article ~\cite{ref5} (which also expose a K mean algorithm but this one is said to be less effective with small amount of data, which may be the case in our situation) and then we'll use the method described in the first part on the selcted features and a mean of the ones in each cluster.
 
 \end{multicols}
 
 \vspace{0.8cm}
 
-\bibliographystyle{plain} 
-\begin{thebibliography}{9}
-    \bibitem{dwtselect}
-      Nick Kingsbury,
-      \emph{SHIFT INVARIANT PROPERTIES OF THE DUAL-TREE COMPLEX WAVELET TRANSFORM}.
-        \\\texttt{https://pdfs.semanticscholar.org/9da5/3dc0ef012916ba9955698451231fdc0d2890.pdf}
+\bibliography{biblio}{}
+\bibliographystyle{plain}
 
-    \bibitem{dtcwt2}
-      2 R.K Sarawale and Dr S.R Chougule,
-      \emph{Image Denoising using Dual-Tree Complex DWT and Double-Density Dual-Tree Complex DWT}.
-        \\\texttt{https://pdfs.semanticscholar.org/ca23/05f7bb9caa189200abe2c4ad403bc8759ecc.pdf}
-
-    \bibitem{infoflow}
-      X. San Liang,
-      \emph{The Liang-Kleeman Information Flow: Theory and Applications}.
-        \\\texttt{https://pdfs.semanticscholar.org/c3ba/9dc7452d88ae8e88f7e651442ae3e5c039cb.pdf}
-        
-    \bibitem{pagerank}
-      Sergey Brin and Lawrence Page,
-      \emph{The Anatomy of a Large-Scale Hypertextual Web Search Engine}.
-        \\\texttt{http://infolab.stanford.edu/pub/papers/google.pdf}
-
-    \bibitem{NNCluster}
-      Sébastien Bubeck and Ulrike von Luxburg,
-      \emph{Nearest Neighbor Clustering: A Baseline Method for Consistent Clustering with Arbitrary Objective Functions}.
-        \\\texttt{http://www.jmlr.org/papers/volume10/bubeck09a/bubeck09a.pdf} 
-
-
-\end{thebibliography}
 
 \end{document}
 
