@@ -87,10 +87,10 @@ Cependant, les technologies ont évolué et les applications peuvent avoir de pe
 
 
 \begin{multicols}{2}
-\section{Availability based method}
-This first method uses nagios disponibility data, which means we have access, for each host and service of the application, only to the disponibility score between 0 and 3 (0: OK, 1: Warning, 2: Critical, 3: Unknown) and not to the exact value of each parameter. We are going to use historical data from old logs to train an algorithm of machine learning combining two learning techniques which are neural networs and the principle of genetic algorithms that we'll then use on the live data to predict the outage of the application that will eventually occur. However as explain in the introduction this method has serious rigidity issues as the training is made on a specific application's structure we'll discuss this limit as a conclusion to this method.
-\subsection{Application model}
-The model for the application we chose is a tree of dependencies. The application is the root of the tree, the internal nodes are the hosts and the leaves are the services. To each node, a relationship is associated to its children. This logical gate indicates wether all of them are required for the availability of this node or if some can be down without making this node unavailable. These relationships are only the known ones, which means that they are explicit, they are obvious looking at the design of the application. We may have relationships that are implied by the interaction of the internal nodes that occurs in a real life system without us being aware of it, but they are not obvious during the creation process of the application. (see Figure~\ref{exampletree} below)
+\section{Méthode basée sur les disponibilités}
+Cette première méthode utilise les données de disponibilité nagios, ce qui signifie que nous n’avons accès, pour chaque hôte et service de l’application, qu’au score d'état de disponibilité compris entre 0 et 3 (0: OK, 1: Avertissement, 2: Critique, 3: Inconnu). Nous allons utiliser les données historiques d'anciens journaux pour entrainer un algorithme d'apprentissage automatique combinant deux techniques d'apprentissage. La première s'appuye sur des réseaux de neurones et ensuite un principe d'algorithme génétique que nous utiliserons ensuite sur les données réelles pour prédire la panne de l'application qui en résultera. éventuellement se produire. Cependant, comme expliqué dans l'introduction, cette méthode pose de sérieux problèmes de rigidité car la formation est faite sur la structure d'une application spécifique. Nous allons discuter de cette limite en tant que conclusion de cette méthode.
+\subsection{Modelisation des applications}
+La modèlisation d'application choisie est un arbre de dépendances. L'application est la racine de l'arborescence, les nœuds internes sont les hôtes et les feuilles sont les services. À chaque nœud, une relation est associée à ses enfants. Cette porte logique indique si tous sont requis pour la disponibilité de ce nœud ou si certains peuvent être en panne sans rendre ce nœud indisponible. Ces relations ne sont que des relations connues, ce qui signifie qu’elles sont explicites et évidentes lors de la conception de l’application. Nous pouvons avoir des relations qui sont impliquées par l'interaction des nœuds internes qui se produit dans un système de la vie réelle sans que nous en soyons conscients, mais elles ne sont pas évidentes lors du processus de création de l'application. (voir ci-dessous Figure~\ref{exampletree})
 \end{multicols}
 
 \vspace{0.8cm}
@@ -98,14 +98,14 @@ The model for the application we chose is a tree of dependencies. The applicatio
 \begin{figure}
 \centering
 \includegraphics[scale=0.5]{./images/PNG/abrerelation.png}
-\caption{Tree example}
+\caption{Exemple d'arbre}
 \label{exampletree}
 \end{figure}
 
 \vspace{0.8cm}
 
 \begin{multicols}{2}
-We also define an image as the state of the whole application i.e. the state of all of its components (hosts and services) at a point in time. This is represented as an array where there are 4 rows, one for each state (0-3) and as many column as hosts and services. The state of an host or a service is given by a boolean in the array (true in the row that is the corresponding state and false everywhere else) illustrated on Figure~\ref{tab}
+Nous définissons également une image comme étant l’état de l’ensemble de l’application, c’est-à-dire l’état de tous ses composants (hôtes et services) à un moment donné. Ceci est représenté sous la forme d'un tableau contenant 4 lignes, une pour chaque état (0-3) et autant de colonnes que d'hôtes et de services. L'état d'un hôte ou d'un service est donné par un booléen dans le tableau (true dans la ligne correspondant à l'état correspondant et false partout ailleurs), illustré à la figure~\ref{tab}
 
 \end{multicols}
 
@@ -114,7 +114,7 @@ We also define an image as the state of the whole application i.e. the state of 
 \begin{figure}[!h]
 \centering
 \includegraphics[scale=0.5]{./images/image.png}
-\caption{General image}
+\caption{Matrice d'état}
 \label{tab}
 \end{figure}
 
@@ -122,11 +122,11 @@ We also define an image as the state of the whole application i.e. the state of 
 
 
 \begin{multicols}{2}
-\subsection{Processing data}
-We are going to use supervised machine learning, therefore we need to label the historical data we'll use to train our neural network. The neural network will have to guess the amount of epoch remaining until the next outage, hence we have to extract from the log all the epochs where the application was unaivalable. This can be achieved with a request to the database in which are stored all the dates of the beginning and the ending of an outage and then, by taging the images whose epoch are in between a start and an end.
- In addition, we need to associate with each image the time remaining before the next outage. This can be done easily using what we calculated before.
-\\We now compute a mean of all the image immediately preceding an outage. At this point, we made an assumption. We assumed that enough informations has been collected to feed the neural network and a raisonnably accurate guess would be stored in the comparison between an image and the mean we calculated. We are going to call this mean image the Reference.
-\\The comparison between an image and the Reference is made by using a simple coordinate by coordinate distance i.e. noting $a_{i}$ the coordinates of the image and $r_{i}$ the ones of the Reference we use, for a given $k\in\mathbb{N}$, the following formula:
+\subsection{Traitement des données}
+Nous allons utiliser l'apprentissage automatique supervisé. Par conséquent, nous devons étiqueter les données historiques que nous utiliserons pour former notre réseau de neurones. Le réseau de neurones devra deviner le nombre d'époques restant jusqu'à la prochaine panne. Nous devons donc extraire du journal toutes les époques où l'application était inégalable. Ceci peut être réalisé avec une requête à la base de données dans laquelle sont stockées toutes les dates du début et de la fin d'une panne, puis en modulant les images dont l'époque se situe entre le début et la fin.
+  De plus, nous devons associer à chaque image le temps restant avant la prochaine panne. Cela peut être fait facilement en utilisant ce que nous avions calculé auparavant.
+\\Nous calculons maintenant une moyenne de toutes les images précédant immédiatement une panne. À ce stade, nous avons fait une hypothèse. Nous avons supposé que suffisamment d'informations avaient été collectées pour alimenter le réseau de neurones et qu'une estimation raisonnablement précise serait stockée dans la comparaison entre une image et la moyenne calculée. Nous allons appeler cette image moyenne la référence.
+\\La comparaison entre une image et la référence se fait en utilisant un simple calcul de distance entre coordonnées, c’est-à-dire en notant $a_{i}$ les coordonnées de l’image et $r_{i}$ celles de la référence que nous utilisons, pour un $k\in\mathbb{N}$ donné, la formule suivante:
 
 \vspace{0.8cm}
 
@@ -136,11 +136,10 @@ We are going to use supervised machine learning, therefore we need to label the 
 
 \vspace{0.8cm}
 
-\subsection{Neural networks}
-The first learning of the algorithm is via neural networks. We are going to train a neural network to guess how much time is remaining until the next outage. A network with a given structure is the set of its weights and biases which are the parameters we'll try to evolve during the learning process. They are going to be randomly initialized, this is why, before the training, our network can be summarize to its structure. So, we'll represent a network by two list of integers. One that will specify the input of the neural network and another for its hidden layers (we only need one output : the guess). The first list length is the total of inputs of the network and each integer in this list will be used as the $k$ in the distance formula thus each input will take a different value of a different comparison between the image and the reference. The second list length is the total number of hidden layer and the $i-th$ integer in the list is the amount of neurones in the layer $i$.
+\subsection{Réseaux de Neurones}
+Le premier apprentissage de l'algorithme se fait via des réseaux de neurones. Nous allons former un réseau de neurones pour deviner combien de temps il reste avant la prochaine panne. Un réseau avec une structure donnée est l'ensemble de ses poids et biais qui sont les paramètres que nous allons essayer d'évoluer pendant le processus d'apprentissage. Ils vont être initialisés de manière aléatoire, c'est pourquoi, avant l'entrainement, notre réseau peut être résumé à sa structure. Nous allons donc représenter un réseau par deux listes d'entiers. Une qui spécifiera l’entrée du réseau de neurones et une autre pour ses couches cachées (nous n’avons besoin que d’une sortie: la supposition). La première longueur de la liste est le total des entrées du réseau et chaque entier de cette liste sera utilisé comme $k$ dans la formule de distance, ainsi chaque entrée prendra une valeur différente d'une comparaison différente entre l'image et la référence. La deuxième longueur de la liste est le nombre total de couche cachée et le $i-ème$ entier de la liste est la quantité de neurones dans la couche $i$.
+
 \end{multicols}
-
-
 
 \vspace{0.8cm}
 
