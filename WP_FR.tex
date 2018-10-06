@@ -144,8 +144,7 @@ Le premier apprentissage de l'algorithme se fait via des réseaux de neurones. N
 \vspace{0.8cm}
 
 \begin{multicols}{2}
-Once the network is defined we start the learning phase. We use our labelled data to train the network to guess the time until the next outage with the backpropagation algorithm. This classical algorithm do the computation with the labelled data, evaluate the cost i.e. the error made by the network between the result just obtained and the label associated with the data. Then, this cost is used to modify the weights and biases of the network.
-The formula to reevaluate the weights $w^l$ and biases $b^l$ is (for the layer $l$):
+Une fois le réseau défini, nous commençons la phase d’apprentissage. Nous utilisons nos données étiquetées pour former le réseau à deviner le temps jusqu'à la prochaine panne avec l'algorithme de rétropropagation. Cet algorithme classique effectue le calcul avec les données étiquetées, évalue le coût, à savoir l'erreur commise par le réseau entre le résultat que l'on vient d'obtenir et l'étiquette associée aux données. Ensuite, ce coût est utilisé pour modifier les poids et les biais du réseau. La formule de réévaluation du poids $w^l$ et du biais $b^l$ est (pour la couche $l$):
 
 \vspace{0.8cm}
 
@@ -156,13 +155,12 @@ The formula to reevaluate the weights $w^l$ and biases $b^l$ is (for the layer $
 
 \vspace{0.8cm}
 
+Où $\eta$ est le taux d'apprentissage, ce qui signifie un coefficient permettant de contrôler la vitesse des modifications apportées aux poids et aux biais. $m$ est le nombre d'éléments utilisés pour évaluer les modifications à apporter. $\delta$ est l'erreur et $x$ est une donnée d'entraînement.
+Cependant, plusieurs problèmes apparaissent ici. Premièrement, lorsque nous formons le réseau, nous minimisons une fonction de ses entrées qui n’est pas convexe. Ainsi, il n’existe pas nécessairement un seul minimum global, nous pouvons, par exemple, basculer deux neurones sur la même couche. En conséquence, il ne pourrait converger que vers un minimum local.
+Le second problème est que nous devons déterminer un bon ensemble d’hyperparamètres, à savoir les listes de structure du réseau, le taux d’apprentissage et la taille des données de formation.
 
-Where $\eta$ is the learning rate, which means a coefficient to control the speed of the changes made upon the weights and biases. $m$ is the number of element used to evaluate the changes that have to be made. $\delta$ is the error and $x$ is a piece of training data.
-However several problems appears here. First, when we train the network we are minimizing a function of its inputs which is not convex. So, it has not necessarily only one global minimum, we can, for instance, switch two neurones on the same layer. As a consequence, it could converge only to a local minimum.
-The second problem is that we have to determine a good set of hyperparameters i.e. the structure lists of the network, the learning rate and the size of the training data.
-
-\subsection{Evolving hyperparameters}
-The solution we proposed is a solution for both problem. It consists in applying the principle of genetic algorithm to our neural networks. After every application outage, we'll evaluate the performance of each network with a fitness function that takes into account the difference between the guess, the reality and its score on an evaluation set of historical data randomly selectionned. So with the distance $x\in\mathbb{R}^{+*}$ and the score $y\in[0, 1]$ we set the function fitness $f$ arbitrarily defined by :
+\subsection{Hyperparamètres évolutifs}
+La solution que nous avons proposée est une solution aux deux problèmes. Cela consiste à appliquer le principe de l'algorithme génétique à nos réseaux de neurones. Après chaque interruption d’application, nous évaluerons les performances de chaque réseau avec une fonction de fitness prenant en compte la différence entre la conjecture, la réalité et son score sur un ensemble d’évaluations de données historiques sélectionnées au hasard. Donc, avec la distance $x\in\mathbb{R}^{+*}$ et le score $y\in[0, 1]$, nous définissons la fonction fitness $f$ définie arbitrairement par:
 
 \vspace{0.8cm}
 
@@ -172,7 +170,7 @@ The solution we proposed is a solution for both problem. It consists in applying
 
 \vspace{0.8cm}
 
-This function has only been chosen for its shape illustrated on Figure ~\ref{fonction}
+Cette fonction a été choisi uniquement en raison de sa forme illustrée à la Figure ~\ref{fonction}
 
 \end{multicols}
 
@@ -181,15 +179,16 @@ This function has only been chosen for its shape illustrated on Figure ~\ref{fon
 \begin{figure}[!ht]
 \centering
 \includegraphics[scale=0.5]{./images/fitness.png}
-\caption{Fitness evaluation for several values of y}
+\caption{Evalution de forme d'entrainement pour plusieurs valeurs de y}
 \label{fonction}
 \end{figure}
 
 \vspace{0.8cm}
 
 \begin{multicols}{2}
-At the beginning we create a population of multiple neural networks that we train separatly from different starting parameters (structure, weights and biases). During the analysis we can use the computation of all these networks. Because they started their training from different configurations they propably didn't converge to the same minimum of the function, thus we increase the probability of getting close to a global minimum. 
-\\We use all the guesses from all of the networks in the population to get the amount of time we are trying to predict. Then after the application outage we apply the fitness function we introduced above to evaluate individualy the networks (Figure~\ref{pop}) and we generate the next generation using the ones with best results. To perform the selection we normalize all the score so that the total sum is $1$ and we randomly select some networks, the higher their score the higher the probability of being selected.
+Au début, nous créons une population de plusieurs réseaux de neurones que nous formons séparément à partir de différents paramètres de départ (structure, poids et biais). Lors de l'analyse, nous pouvons utiliser le calcul de tous ces réseaux. Comme ils ont commencé leur formation à partir de différentes configurations, ils n’ont probablement pas convergé vers le même minimum de fonctions, nous avons donc augmenté la probabilité de nous approcher d’un minimum global.
+\\
+Nous utilisons toutes les suppositions de tous les réseaux de la population pour obtenir le temps que nous essayons de prévoir. Ensuite, après l’interruption de l’application, nous appliquons la fonction de mise en forme introduite ci-dessus pour évaluer individuellement les réseaux (Figure ~\ref{pop}) et nous générons la prochaine génération à l’aide des réseaux les plus performants. Pour effectuer la sélection, nous normalisons tout le score de sorte que la somme totale soit de $1$ et nous sélectionnons certains réseaux au hasard. Plus leur score est élevé, plus la probabilité d'être sélectionné est grande.
 \end{multicols}
 
 \vspace{0.8cm}
@@ -197,7 +196,7 @@ At the beginning we create a population of multiple neural networks that we trai
 \begin{figure}[!ht]
 \centering
 \includegraphics[scale=0.5]{./images/PNG/Population.png}
-\caption{A population of network}
+\caption{Une population de reseau}
 \label{pop}
 \end{figure}
 
